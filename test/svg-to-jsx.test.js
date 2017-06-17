@@ -12,9 +12,28 @@ const getFixture = name => {
 };
 
 describe('svgToJsx', () => {
-  test('works', () => {
+  test('works on an airplane', () => {
     return svgToJsx(getFixture('airplane')).then(result => {
       expect(result).toMatchSnapshot();
     });
+  });
+
+  test('works on an apple', () => {
+    return svgToJsx(getFixture('apple')).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('passes SVGO plugins', () => {
+    const options = {
+      svgoPlugins: [{ removeDimensions: true }]
+    };
+    return svgToJsx(getFixture('apple'), options).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('catches SVGO error', () => {
+    return expect(svgToJsx('#<foo##p')).rejects.toMatch('Error in parsing SVG');
   });
 });
