@@ -4,6 +4,39 @@ Transform SVG into JSX or React component modules.
 
 🚧 🚧 **EXPERIMENTAL! WORK IN PROGRESS!** 🚧 🚧
 
+## API
+
+The module exposes two functions.
+
+### `svgToJsx(svg: string, options: Object): Promise<string>`
+
+Runs an SVG string through SVGO, then converts the output to JSX.
+Returns a Promise that resolves with the JSX string.
+
+Options:
+
+- **svgoPlugins**: `?Array<Object>` - [SVGO](https://github.com/svg/svgo) plugins.
+
+### `svgToComponentModule(svg: string, options: Object): Promise<string>`
+
+Runs an SVG string through `svgToJsx` (above), then inserts the JSX into a templated React component module.
+Returns a Promise that resolves with the React component module string.
+
+Options:
+- **svgoPlugins**: `?Array<Object>` - See the same option for `svgToJsx` (above).
+- **name**: `?string` - Default: 'SvgComponent'.
+  A name for the component class.
+  Will be converted to PascalCase.
+- **propTypes**: `?Object` - An object defining `propTypes` for the generated React component.
+  Values should be *stringified* versions of typical `propTypes` values, e.g. `"PropTypes.string.isRequired"`.
+  If this option is provided, the default template will include `const PropTypes = require('prop-types');`.
+- **template**: `?Function` - An alternative template function.
+  Receives as its argument a data object and must return a string.
+  Data includes:
+  - `name`: The value of the `name` option above.
+  - `propTypes`: The value of the `propTypes` option above.
+  - `svgJsx`: The JSX string generated from your source SVG.
+
 ## What about other modules that do similar things?
 
 There are many, many npm packages for converting SVGs to React components.
@@ -23,10 +56,10 @@ SVGO works on its own.
 You just need to expose its options.
 
 The second step ("Transform the SVG to JSX (or a React element).") is reimplemented in a hundred different ways.
-But this problem should be outsourced to another, more low-level package, because transforming HTML and XML to React components is not a problem specific to SVG.
+But this problem should be outsourced to another, more low-level package, because transforming HTML and XML to React components is not a problem specific to SVG. (See [html-to-react](https://github.com/aknuds1/html-to-react) and [htmltojsx](https://www.npmjs.com/package/htmltojsx).)
 
-The third step ("Plug the JSX into a React component module.") is not really a problem to be solved, because we have template literals and other means of templating.
+The third step ("Plug the JSX into a React component module.") is also not really a problem to be solved, because we have template literals and other means of templating.
 
 So (as long as you outsource the second step), *there is actually no problem to be solved, just an API to provide.*
 
-That's the goal of this package: provide an API to accomplish those steps without unnecessarily reimplementing functionality that (should) belong to other packages.
+That's the goal of this package: provide an API to accomplish those steps (without unnecessarily reimplementing functionality that (should) belong to other packages). Ideally, then, this package could be *used* by Webpack loaders, Browserify transforms, CLIs, Gulp plugins, etc., to save them from reimplementing the same functionality over and over again.
