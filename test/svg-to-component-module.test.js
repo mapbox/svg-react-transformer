@@ -125,12 +125,27 @@ describe('svgToComponentModule', () => {
 
   test('options.propTypes', () => {
     const options = {
-      propTypes: {
-        width: 'PropTypes.number.isRequired',
-        height: 'PropTypes.number.isRequired'
-      }
+      propTypes: `{
+        width: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired
+      }`
     };
     return svgToComponentModule(getFixture('apple'), options).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('options.defaultProps', () => {
+    const options = {
+      defaultProps: `{
+        role: 'img',
+        focusable: 'false'
+      }`
+    };
+    return svgToComponentModule(
+      getFixture('airplane'),
+      options
+    ).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
@@ -138,9 +153,9 @@ describe('svgToComponentModule', () => {
   test('options.template', () => {
     const options = {
       name: 'Fakery',
-      propTypes: { width: 'PropTypes.number' },
+      propTypes: `{ width: PropTypes.number }`,
       template: data => {
-        return `${data.name}\n${data.propTypes.width}\n${data.svgJsx}`;
+        return `${data.name}\n${data.propTypes}\n${data.svgJsx}`;
       }
     };
     return svgToComponentModule(getFixture('apple'), options).then(result => {

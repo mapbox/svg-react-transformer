@@ -10,7 +10,9 @@ Transform SVG into JSX or React component modules.
 
 The module exposes two functions.
 
-### `svgToJsx(svg: string, options?: Object): Promise<string>`
+### `svgToJsx`
+
+`svgToJsx(svg: string, options?: Object): Promise<string>`
 
 Runs an SVG string through SVGO, then converts the output to JSX.
 Returns a Promise that resolves with the JSX string.
@@ -18,8 +20,18 @@ Returns a Promise that resolves with the JSX string.
 Options:
 
 - **svgoPlugins**: `?Array<Object>` - [SVGO](https://github.com/svg/svgo) plugins.
+  The following are automatically set, so no need to add them:
+  ```js
+  [
+    { removeDoctype: true },
+    { removeComments: true },
+    { removeXMLNS: true }
+  ]
+  ```
 
-### `svgToComponentModule(svg: string, options?: Object): Promise<string>`
+### `svgToComponentModule`
+
+`svgToComponentModule(svg: string, options?: Object): Promise<string>`
 
 Runs an SVG string through `svgToJsx` (above), then inserts the JSX into a templated React component module.
 Returns a Promise that resolves with the React component module string.
@@ -29,14 +41,17 @@ Options:
 - **name**: `?string` - Default: 'SvgComponent'.
   A name for the component class.
   Will be converted to PascalCase.
-- **propTypes**: `?Object` - An object defining `propTypes` for the generated React component.
-  Values should be *stringified* versions of typical `propTypes` values, e.g. `"PropTypes.string.isRequired"`.
+- **propTypes**: `?string` - A stringified object defining `propTypes` for the generated React component.
+  It should be the string of the code that you'd put in here: `MyComponent.propTypes = ${this.place}`.
   If this option is provided, the default template will include `const PropTypes = require('prop-types');`.
+- **defaultProps**: `?string` - A stringified object defining `defaultProps` for the generated React component.
+  It should be the string of the code that you'd put in here: `MyComponent.defaultProps = ${this.place}`.
 - **template**: `?Function` - An alternative template function.
   Receives as its argument a data object and must return a string.
   Data includes:
-  - `name`: The value of the `name` option above.
+  - `name`: The value of the `name` option above (converted to PascalCase).
   - `propTypes`: The value of the `propTypes` option above.
+  - `defaultProps`: The value of the `defaultProps` option above.
   - `svgJsx`: The JSX string generated from your source SVG.
 
 ## What about other modules that do similar things?
