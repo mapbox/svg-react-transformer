@@ -8,7 +8,7 @@ Transform SVG into JSX or React component modules.
 
 The module exposes two functions.
 
-### `svgToJsx(svg: string, options: Object): Promise<string>`
+### `svgToJsx(svg: string, options?: Object): Promise<string>`
 
 Runs an SVG string through SVGO, then converts the output to JSX.
 Returns a Promise that resolves with the JSX string.
@@ -17,7 +17,7 @@ Options:
 
 - **svgoPlugins**: `?Array<Object>` - [SVGO](https://github.com/svg/svgo) plugins.
 
-### `svgToComponentModule(svg: string, options: Object): Promise<string>`
+### `svgToComponentModule(svg: string, options?: Object): Promise<string>`
 
 Runs an SVG string through `svgToJsx` (above), then inserts the JSX into a templated React component module.
 Returns a Promise that resolves with the React component module string.
