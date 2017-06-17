@@ -24,6 +24,12 @@ describe('svgToJsx', () => {
     });
   });
 
+  test('works on a big one', () => {
+    return svgToJsx(getFixture('big')).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
   test('passes SVGO plugins', () => {
     const options = {
       svgoPlugins: [{ removeDimensions: true }]
