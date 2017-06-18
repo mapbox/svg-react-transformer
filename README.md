@@ -13,7 +13,10 @@ Examples:
 
 ## API
 
-The module exposes two functions.
+The module exposes the follwing functions.
+
+- [svgToJsx](#svgtojsx)
+- [svgToComponentModule](#svgtocomponentmodule)
 
 ### `svgToJsx`
 
