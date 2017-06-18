@@ -4,8 +4,6 @@
 
 Transform SVG into JSX or React component modules.
 
-🚧 🚧 **EXPERIMENTAL! WORK IN PROGRESS!** 🚧 🚧
-
 ## API
 
 The module exposes two functions.
