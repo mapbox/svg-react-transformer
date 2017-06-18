@@ -22,7 +22,7 @@ The module exposes two functions.
 Runs an SVG string through SVGO, then converts the output to JSX.
 Returns a Promise that resolves with the JSX string.
 
-Options:
+**Options** (none required)
 
 - **svgoPlugins**: `?Array<Object>` - [SVGO](https://github.com/svg/svgo) plugins.
   The following are automatically set, so no need to add them:
@@ -41,7 +41,8 @@ Options:
 Runs an SVG string through `svgToJsx` (above), then inserts the JSX into a templated React component module.
 Returns a Promise that resolves with the React component module string.
 
-Options:
+**Options** (none required)
+
 - **svgoPlugins**: `?Array<Object>` - See the same option for `svgToJsx` (above).
 - **name**: `?string` - Default: 'SvgComponent'.
   A name for the component class.
