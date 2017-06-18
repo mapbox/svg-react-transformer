@@ -4,8 +4,8 @@
 
 Transform SVG into JSX or React component modules.
 
-This module takes one string (SVG) and converts it to another string (React component module).
-That low-level focus means it can be used as the core of many higher-level modules for specific contexts.
+This module takes one string (SVG) and converts it to another string (JSX or React component module).
+That low-level focus means it can be used by a variety of higher-level modules that target specific contexts.
 Examples:
 
 - [svg-react-transformer-writer](https://github.com/mapbox/svg-react-transformer-writer): Provides a Node API and CLI for reading SVG files and writing React component module files.
