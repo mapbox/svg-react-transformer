@@ -30,6 +30,12 @@ describe('svgToJsx', () => {
     });
   });
 
+  test('works on one with style attributes', () => {
+    return svgToJsx(getFixture('style-attributes')).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
   test('passes SVGO plugins', () => {
     const options = {
       svgoPlugins: [{ removeDimensions: true }]

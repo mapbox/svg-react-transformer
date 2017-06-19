@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79.4" height="69.855" viewBox="0 0 79.4 69.855">
+  <defs>
+    <clipPath id="a" transform="translate(-2.3 -8.8)">
+      <rect x="2.3" y="24" width="60" height="43" rx="4.5" ry="4.5" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>data-viz-maps</title>
+  <path d="M57.2,37l8.3-1.5a1.817,1.817,0,0,1,2.1,1.4l5.3,29A1.817,1.817,0,0,1,71.5,68l-8.3,1.5a1.817,1.817,0,0,1-2.1-1.4l-5.3-29A1.743,1.743,0,0,1,57.2,37Z" transform="translate(-2.3 -8.8)" fill="#c5b8ed"/>
+  <path d="M81.7,45.2l-1.8-7.4a1.8,1.8,0,0,0-2.1-1.3c-.2,0-.3.1-.5.2l-6.7,3.8L61.5,61.4a3.189,3.189,0,0,0,1.6,4.2l5.1,2.3a3.189,3.189,0,0,0,4.2-1.6l8.7-20Z" transform="translate(-2.3 -8.8)" fill="#dad2f9"/>
+  <rect x="63.288" y="45.501" width="6" height="2" transform="translate(-9.615 3.951) rotate(-10.417)" fill="#dad2f9"/>
+  <rect x="62.392" y="40.599" width="6" height="2" transform="translate(-8.744 3.709) rotate(-10.417)" fill="#dad2f9"/>
+  <circle cx="66.896" cy="61.496" r="2.5" transform="translate(-12.321 4.316) rotate(-10.422)" fill="#dad2f9"/>
+  <path d="M60.5,57H74.1a3.159,3.159,0,0,1,3.2,3.2V73.8A3.159,3.159,0,0,1,74.1,77H60.5a3.159,3.159,0,0,1-3.2-3.2V60.2A3.222,3.222,0,0,1,60.5,57Z" transform="translate(-2.3 -8.8)" fill="#c5b8ed"/>
+  <rect x="21" y="58.2" width="19" height="4" fill="#5a39c3"/>
+  <path d="M6.8,24h51a4.481,4.481,0,0,1,4.5,4.5v34A4.481,4.481,0,0,1,57.8,67H6.8a4.481,4.481,0,0,1-4.5-4.5v-34A4.481,4.481,0,0,1,6.8,24Z" transform="translate(-2.3 -8.8)" fill="#5a39c3"/>
+  <path d="M24.4,54.7a2.342,2.342,0,0,1-1.7.7h-5a2.06,2.06,0,0,0-1.7.7L13,59H62.4V28.9A4.7,4.7,0,0,0,57.9,24H25.8v9.9a2.456,2.456,0,0,1-2.5,2.4H19.8a2.523,2.523,0,0,0-2.5,2.4v4.1a2.609,2.609,0,0,0,.7,1.7L24.6,51a2.357,2.357,0,0,1,.1,3.3l-.1.1Z" transform="translate(-2.3 -8.8)" fill="#774cef" opacity="0.5" style="isolation: isolate"/>
+  <g clip-path="url(#a)">
+    <line x1="53" y1="10.2" x2="51.8" y2="11.8" fill="none" stroke="#774cef" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#a)">
+    <line x1="24.3" y1="67.7" x2="23" y2="69.2" fill="none" stroke="#774cef" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#a)">
+    <line x1="66" y1="13.2" x2="64.8" y2="14.8" fill="none" stroke="#774cef" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+  <path d="M2.3,59h60v3.5A4.481,4.481,0,0,1,57.8,67H6.8a4.481,4.481,0,0,1-4.5-4.5V59Z" transform="translate(-2.3 -8.8)" fill="#774cef"/>
+  <circle cx="30.5" cy="54.7" r="1.5" fill="#5a39c3"/>
+  <rect x="18" y="62.2" width="26" height="6" fill="#774cef"/>
+  <circle cx="21.6" cy="29.1" r="5.8" fill="#c5b8ed" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="31.9" cy="40.5" r="1.4" fill="#c5b8ed" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="47.8" cy="31.6" r="1.4" fill="#c5b8ed" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="31" cy="24.5" r="1.4" fill="#c5b8ed" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="21.6" cy="29.1" r="3.2" fill="#dad2f9" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="40.5" cy="42.7" r="3.5" fill="#c5b8ed" opacity="0.5" style="isolation: isolate"/>
+  <circle cx="40.5" cy="42.7" r="1.7" fill="#dad2f9" opacity="0.5" style="isolation: isolate"/>
+  <polygon points="70.2 13 68.6 16.2 65.4 17.8 68.6 19.3 70.2 22.6 71.8 19.3 75 17.8 71.8 16.2 70.2 13" fill="#dad2f9"/>
+  <polygon points="49.2 0 47.6 3.2 44.4 4.8 47.6 6.3 49.2 9.6 50.8 6.3 54 4.8 50.8 3.2 49.2 0" fill="#dad2f9"/>
+  <path d="M81.7,45.2a4.822,4.822,0,0,1-3.565-2.513A4.342,4.342,0,0,0,72.44,40.26a5.918,5.918,0,0,1-1.87.32l.03-.08,6.7-3.8c.2-.1.3-.2.5-.2a1.8,1.8,0,0,1,2.1,1.3Z" transform="translate(-2.3 -8.8)" fill="#c5b8ed"/>
+</svg>
