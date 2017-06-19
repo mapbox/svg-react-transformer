@@ -69,6 +69,14 @@ describe('svgToComponentModule', () => {
     });
   });
 
+  test('works with one with style attributes', () => {
+    return svgToComponentModule(getFixture('style-attributes'), {
+      name: 'style-attributes'
+    }).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
   test('creates valid React components from an airplane', () => {
     return svgToComponentModule(getFixture('airplane'))
       .then(result => {

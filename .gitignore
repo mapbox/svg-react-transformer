@@ -3,3 +3,4 @@ test/output
 *.log
 .DS_Store
 coverage
+test/tmp

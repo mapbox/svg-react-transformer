@@ -13,32 +13,35 @@ const getFixture = name => {
 
 describe('svgToJsx', () => {
   test('works on an airplane', () => {
-    return svgToJsx(getFixture('airplane')).then(result => {
+    return svgToJsx(getFixture('airplane'), { id: 'airplane' }).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works on an apple', () => {
-    return svgToJsx(getFixture('apple')).then(result => {
+    return svgToJsx(getFixture('apple'), { id: 'apple' }).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works on a big one', () => {
-    return svgToJsx(getFixture('big')).then(result => {
+    return svgToJsx(getFixture('big'), { id: 'big' }).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works on one with style attributes', () => {
-    return svgToJsx(getFixture('style-attributes')).then(result => {
+    return svgToJsx(getFixture('style-attributes'), {
+      id: 'style-attributes'
+    }).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('passes SVGO plugins', () => {
     const options = {
-      svgoPlugins: [{ removeDimensions: true }]
+      svgoPlugins: [{ removeDimensions: true }],
+      id: 'apple'
     };
     return svgToJsx(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
@@ -46,6 +49,8 @@ describe('svgToJsx', () => {
   });
 
   test('catches SVGO error', () => {
-    return expect(svgToJsx('#<foo##p')).rejects.toMatch('Error in parsing SVG');
+    return expect(svgToJsx('#<foo##p', { id: 'error' })).rejects.toMatch(
+      'Error in parsing SVG'
+    );
   });
 });

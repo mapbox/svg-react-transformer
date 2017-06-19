@@ -369,7 +369,7 @@ exports[`svgToJsx works on one with style attributes 1`] = `
 >
   <defs>
     <clippath
-      id=\\"a\\"
+      id=\\"styleattributes-a\\"
       transform=\\"translate(-2.3 -8.8)\\"
     >
       <rect
@@ -425,7 +425,7 @@ exports[`svgToJsx works on one with style attributes 1`] = `
       isolation: 'isolate'
     }}
   />
-  <g clipPath=\\"url(#a)\\">
+  <g clipPath=\\"url(#styleattributes-a)\\">
     <path
       d=\\"M53 10.2l-1.2 1.6\\"
       fill=\\"none\\"
@@ -434,7 +434,7 @@ exports[`svgToJsx works on one with style attributes 1`] = `
       strokeWidth=\\"2\\"
     />
   </g>
-  <g clipPath=\\"url(#a)\\">
+  <g clipPath=\\"url(#styleattributes-a)\\">
     <path
       d=\\"M24.3 67.7L23 69.2\\"
       fill=\\"none\\"
@@ -443,7 +443,7 @@ exports[`svgToJsx works on one with style attributes 1`] = `
       strokeWidth=\\"2\\"
     />
   </g>
-  <g clipPath=\\"url(#a)\\">
+  <g clipPath=\\"url(#styleattributes-a)\\">
     <path
       d=\\"M66 13.2l-1.2 1.6\\"
       fill=\\"none\\"
