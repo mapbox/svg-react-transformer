@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const prettier = require('prettier');
 const svgToJsx = require('../lib/svg-to-jsx');
 
 const getFixture = name => {
@@ -14,19 +15,25 @@ const getFixture = name => {
 describe('svgToJsx', () => {
   test('works on an airplane', () => {
     return svgToJsx(getFixture('airplane'), { id: 'airplane' }).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on an apple', () => {
     return svgToJsx(getFixture('apple'), { id: 'apple' }).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on a big one', () => {
     return svgToJsx(getFixture('big'), { id: 'big' }).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(prettier.format(result)).toMatchSnapshot();
+    });
+  });
+
+  test('works on a layered one, preserving order', () => {
+    return svgToJsx(getFixture('layered'), { id: 'layered' }).then(result => {
+      expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
@@ -34,7 +41,7 @@ describe('svgToJsx', () => {
     return svgToJsx(getFixture('style-attributes'), {
       id: 'style-attributes'
     }).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
@@ -44,7 +51,7 @@ describe('svgToJsx', () => {
       id: 'apple'
     };
     return svgToJsx(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 

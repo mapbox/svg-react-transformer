@@ -2,150 +2,531 @@
 
 exports[`svgToJsx passes SVGO plugins 1`] = `
 "<svg viewBox=\\"0 0 18 18\\">
-  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\"/>
-  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\"/>
-</svg>"
+  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
+  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+</svg>;
+"
 `;
 
 exports[`svgToJsx works on a big one 1`] = `
 "<svg width=\\"414\\" height=\\"324\\" viewBox=\\"0 0 414 324\\">
-  <path fill=\\"#FFF\\" d=\\"M.333.333h414v324h-414z\\"/>
-  <path fill=\\"none\\" d=\\"M152.333 24.298h127.432v109.036H152.333z\\"/>
-  <path fill=\\"#251413\\" d=\\"M288.016 17.766h109.256v87.97H288.016z\\"/>
-  <path fill=\\"#4C2525\\" d=\\"M46.389 234.756h13.958v13.958H46.389zM46.389 218.081h13.958v13.958H46.389z\\"/>
+  <path fill=\\"#FFF\\" d=\\"M.333.333h414v324h-414z\\" />
+  <path fill=\\"none\\" d=\\"M152.333 24.298h127.432v109.036H152.333z\\" />
   <switch>
-    <foreignObject requiredExtensions=\\"http://ns.adobe.com/Flows/1.0/\\" x=\\"0\\" y=\\"0\\" width=\\"1\\" height=\\"1\\" overflow=\\"visible\\">
+    <foreignObject
+      requiredExtensions=\\"http://ns.adobe.com/Flows/1.0/\\"
+      x=\\"0\\"
+      y=\\"0\\"
+      width=\\"1\\"
+      height=\\"1\\"
+      overflow=\\"visible\\"
+    >
       <flowDef xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
         <region textMatrix=\\"1 0 0 1 0 0\\">
-          <path fill=\\"none\\" d=\\"M279.765 133.333h-130.49V24.298h130.49v109.035z\\"/>
+          <path
+            fill=\\"none\\"
+            d=\\"M279.765 133.333h-130.49V24.298h130.49v109.035z\\"
+          />
         </region>
         <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">##3$$,</span>
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\"/>
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##2$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPS-BoldMT&apos;\\" fontSize=\\"9\\">
+              ##3$$,
+            </span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8.894\\" />
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"7\\">
+              ##2$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##1$$,</span>
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\"/>
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##5$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##1$$,
+            </span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8.596\\" />
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"7\\">
+              ##5$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##10$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##10$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##11$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##11$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##7$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##7$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##6$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##6$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##8$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##8$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##4$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##4$$
+            </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##17$$, ##18$$ ##19$$</span>
+            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+              ##17$$, ##18$$ ##19$$
+            </span>
           </p>
         </flow>
       </flowDef>
     </foreignObject>
     <g>
-      <path fill=\\"none\\" d=\\"M149.275 24.298h130.49v109.036h-130.49z\\"/>
+      <path fill=\\"none\\" d=\\"M149.275 24.298h130.49v109.036h-130.49z\\" />
       <text transform=\\"translate(235.292 30.48)\\">
-        <tspan x=\\"0\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">##3$$,</tspan>
-        <tspan x=\\"24.75\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\"/>
-        <tspan x=\\"26.974\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##2$$</tspan>
-        <tspan x=\\"2.825\\" y=\\"10.314\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##1$$,</tspan>
-        <tspan x=\\"24.825\\" y=\\"10.314\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\"/>
-        <tspan x=\\"26.974\\" y=\\"10.314\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##5$$</tspan>
-        <tspan x=\\"20.474\\" y=\\"19.915\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##10$$</tspan>
-        <tspan x=\\"20.474\\" y=\\"29.515\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##11$$</tspan>
-        <tspan x=\\"24.474\\" y=\\"39.115\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##7$$</tspan>
-        <tspan x=\\"24.474\\" y=\\"48.715\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##6$$</tspan>
-        <tspan x=\\"24.474\\" y=\\"58.314\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##8$$</tspan>
-        <tspan x=\\"24.474\\" y=\\"67.915\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##4$$</tspan>
-        <tspan x=\\"-33.526\\" y=\\"77.515\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##17$$, ##18$$ ##19$$</tspan>
+        <tspan
+          x=\\"0\\"
+          y=\\"0\\"
+          fontFamily=\\"&apos;TimesNewRomanPS-BoldMT&apos;\\"
+          fontSize=\\"9\\"
+        >
+          ##3$$,
+        </tspan>
+        <tspan
+          x=\\"24.75\\"
+          y=\\"0\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8.894\\"
+        >
+          {\\" \\"}
+        </tspan>
+        <tspan
+          x=\\"26.974\\"
+          y=\\"0\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"7\\"
+        >
+          ##2$$
+        </tspan>
+        <tspan
+          x=\\"2.825\\"
+          y=\\"10.314\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##1$$,
+        </tspan>
+        <tspan
+          x=\\"24.825\\"
+          y=\\"10.314\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8.596\\"
+        >
+          {\\" \\"}
+        </tspan>
+        <tspan
+          x=\\"26.974\\"
+          y=\\"10.314\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"7\\"
+        >
+          ##5$$
+        </tspan>
+        <tspan
+          x=\\"20.474\\"
+          y=\\"19.915\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##10$$
+        </tspan>
+        <tspan
+          x=\\"20.474\\"
+          y=\\"29.515\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##11$$
+        </tspan>
+        <tspan
+          x=\\"24.474\\"
+          y=\\"39.115\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##7$$
+        </tspan>
+        <tspan
+          x=\\"24.474\\"
+          y=\\"48.715\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##6$$
+        </tspan>
+        <tspan
+          x=\\"24.474\\"
+          y=\\"58.314\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##8$$
+        </tspan>
+        <tspan
+          x=\\"24.474\\"
+          y=\\"67.915\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##4$$
+        </tspan>
+        <tspan
+          x=\\"-33.526\\"
+          y=\\"77.515\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"8\\"
+        >
+          ##17$$, ##18$$ ##19$$
+        </tspan>
       </text>
     </g>
   </switch>
+  <path fill=\\"#251413\\" d=\\"M288.016 17.766h109.256v87.97H288.016z\\" />
+  <path
+    fill=\\"#4C2525\\"
+    d=\\"M46.389 234.756h13.958v13.958H46.389zM46.389 218.081h13.958v13.958H46.389z\\"
+  />
   <g>
-    <path fill=\\"none\\" d=\\"M66.715 220.205h115.852v30.135H66.715z\\"/>
+    <path fill=\\"none\\" d=\\"M66.715 220.205h115.852v30.135H66.715z\\" />
     <switch>
-      <foreignObject requiredExtensions=\\"http://ns.adobe.com/Flows/1.0/\\" x=\\"0\\" y=\\"0\\" width=\\"1\\" height=\\"1\\" overflow=\\"visible\\">
+      <foreignObject
+        requiredExtensions=\\"http://ns.adobe.com/Flows/1.0/\\"
+        x=\\"0\\"
+        y=\\"0\\"
+        width=\\"1\\"
+        height=\\"1\\"
+        overflow=\\"visible\\"
+      >
         <flowDef xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
           <region textMatrix=\\"1 0 0 1 0 0\\">
-            <path fill=\\"none\\" d=\\"M190.394 245.59H66.715v-25.385h123.679v25.385z\\"/>
+            <path
+              fill=\\"none\\"
+              d=\\"M190.394 245.59H66.715v-25.385h123.679v25.385z\\"
+            />
           </region>
-          <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"5\\">
-            <p>
-              <span>##25$$</span>
-            </p>
+          <flow
+            xmlns=\\"http://ns.adobe.com/Flows/1.0/\\"
+            fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+            fontSize=\\"5\\"
+          >
+            <p><span>##25$$</span></p>
           </flow>
         </flowDef>
       </foreignObject>
       <g>
-        <path fill=\\"none\\" d=\\"M66.715 220.205h123.679v25.385H66.715z\\"/>
-        <text transform=\\"translate(66.715 223.68)\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"5\\">##25$$</text>
+        <path fill=\\"none\\" d=\\"M66.715 220.205h123.679v25.385H66.715z\\" />
+        <text
+          transform=\\"translate(66.715 223.68)\\"
+          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontSize=\\"5\\"
+        >
+          ##25$$
+        </text>
       </g>
     </switch>
   </g>
-</svg>"
+</svg>;
+"
+`;
+
+exports[`svgToJsx works on a layered one, preserving order 1`] = `
+"<svg data-name=\\"Layer 1\\" width=\\"200\\" height=\\"200\\" viewBox=\\"0 0 200 200\\">
+  <defs>
+    <clipPath id=\\"layered-a\\">
+      <path
+        fill=\\"none\\"
+        d=\\"M174.517 157.545l7.466-7.466-5.298-5.299-7.467 7.466 5.299 5.299\\"
+      />
+    </clipPath>
+    <clipPath id=\\"layered-b\\">
+      <path
+        d=\\"M182.3 149.512c-4.608 0-8.344-3.069-8.344-7.676L179.24 144h.056l2.529-2.03a5.928 5.928 0 0 1 2.436-.97h6.382a8.381 8.381 0 0 1-8.343 8.51\\"
+        fill=\\"none\\"
+      />
+    </clipPath>
+  </defs>
+  <title>Artboard 2</title>
+  <path
+    d=\\"M31.662 180.604l-4.167-.487 2.925-25.028a2.364 2.364 0 0 1 2.314-1.817 2.356 2.356 0 0 1 1.853 2.304l-2.925 25.028z\\"
+    fill=\\"#df568d\\"
+  />
+  <circle
+    cx=\\"32.709\\"
+    cy=\\"153.361\\"
+    r=\\"4.27\\"
+    transform=\\"rotate(-69.739 32.709 153.364)\\"
+    fill=\\"#c94380\\"
+  />
+  <path
+    d=\\"M28.627 174.365l-3.33.805-5.923-24.492c-.079-1.234.402-2.225 1.17-2.416.775-.193 1.664.469 2.16 1.611l5.923 24.492z\\"
+    fill=\\"#4e73f8\\"
+  />
+  <rect
+    x=\\"3.544\\"
+    y=\\"38.001\\"
+    width=\\"77\\"
+    height=\\"80\\"
+    rx=\\"9.545\\"
+    ry=\\"9.545\\"
+    fill=\\"#e5ebfd\\"
+  />
+  <path fill=\\"#f7f8fc\\" d=\\"M3.544 49.001h78v58h-78z\\" />
+  <path fill=\\"#4e73f8\\" d=\\"M23.544 71.001h6v28h-6zM14.544 81.001h6v18h-6z\\" />
+  <path fill=\\"#466fe0\\" d=\\"M43.544 67.001h6v32h-6z\\" />
+  <path fill=\\"#2f4ab8\\" d=\\"M53.544 58.001h6v41h-6z\\" />
+  <path fill=\\"#466fe0\\" d=\\"M33.544 78.001h6v21h-6z\\" />
+  <path
+    d=\\"M176.168 145h14.004a2.514 2.514 0 0 0 2.484-2.127l3.414-21.996a2.493 2.493 0 0 0-2.464-2.876h-14.044a2.493 2.493 0 0 0-2.464 2.11l-3.414 21.991a2.514 2.514 0 0 0 2.484 2.899z\\"
+    fill=\\"#2d465f\\"
+  />
+  <circle cx=\\"86.689\\" cy=\\"56.583\\" r=\\"13.625\\" fill=\\"#df568d\\" />
+  <g clipPath=\\"url(#layered-a)\\" fill=\\"#f2d2c5\\">
+    <path d=\\"M169.544 144.001h13v13h-13z\\" />
+    <circle
+      cx=\\"175.6\\"
+      cy=\\"151.162\\"
+      r=\\"4.578\\"
+      transform=\\"rotate(-44.998 175.6 151.162)\\"
+    />
+    <circle
+      cx=\\"175.601\\"
+      cy=\\"151.163\\"
+      r=\\"2.289\\"
+      transform=\\"rotate(-45.003 175.6 151.163)\\"
+    />
+  </g>
+  <path
+    d=\\"M130.544 181h-58v-30.16A26.919 26.919 0 0 1 99.384 124h4.32a26.919 26.919 0 0 1 26.84 26.84z\\"
+    fill=\\"#2f4ab8\\"
+  />
+  <path
+    d=\\"M105.132 58H94.955a28.603 28.603 0 0 0-23.411 28.034v7.57a28.61 28.61 0 0 0 21.223 27.548l5.96 10.324a2.712 2.712 0 0 0 4.697 0l6.42-11.12a28.61 28.61 0 0 0 18.7-26.752v-7.57A28.603 28.603 0 0 0 105.132 58z\\"
+    fill=\\"#f2d2c5\\"
+  />
+  <path
+    d=\\"M100.854 50.744a30.07 30.07 0 0 0-2.636.106c-11.69.987-19.533 8.596-20.425 9.486a36.122 36.122 0 0 0-10.37 23.061l-.777 8.673a41.301 41.301 0 0 0 .778 9.33c1.433.187 5.254.259 6.738.259 14.138 0 25.698-9.818 30.586-22.22a33.307 33.307 0 0 0 22.54 8.744c2.126 0 5.24.898 7.256.518V83.52a28.101 28.101 0 0 0-.053-1.798c-.732-11.947-8.9-20.19-10.057-21.324a34.982 34.982 0 0 0-23.58-9.653z\\"
+    fill=\\"#df568d\\"
+  />
+  <path
+    d=\\"M109.044 105.088a2.507 2.507 0 0 1-2.5-2.5V98.37a2.613 2.613 0 0 1 1.885-2.583 2.507 2.507 0 0 1 3.115 2.425v4.376a2.507 2.507 0 0 1-2.5 2.5z\\"
+    fill=\\"#daaf9e\\"
+  />
+  <path
+    d=\\"M131.544 146.572a22.857 22.857 0 0 0-22.79-22.79L77.034 181h54.51z\\"
+    fill=\\"#2f4ab8\\"
+  />
+  <path
+    d=\\"M61.694 188.655l-.425-.158a8.199 8.199 0 0 1-4.82-10.508l13.211-35.6a8.2 8.2 0 0 1 10.509-4.82l.426.159a8.198 8.198 0 0 1 4.82 10.508l-13.212 35.6a8.2 8.2 0 0 1-10.509 4.82zM143.374 184.892l.335.307a8.199 8.199 0 0 0 11.55-.499l25.453-27.75-12.384-11.358-25.453 27.75a8.198 8.198 0 0 0 .499 11.55z\\"
+    fill=\\"#4e73f8\\"
+  />
+  <path
+    d=\\"M152.19 189.194l.382-.246a8.2 8.2 0 0 0 2.463-11.295l-26.67-41.549a8.2 8.2 0 0 0-11.296-2.463l-.382.245a8.198 8.198 0 0 0-2.463 11.295l26.67 41.55a8.198 8.198 0 0 0 11.295 2.463z\\"
+    fill=\\"#2f4ab8\\"
+  />
+  <path fill=\\"#e5ebfd\\" d=\\"M5.544 185.005h156v8h-156z\\" />
+  <g clipPath=\\"url(#layered-b)\\" fill=\\"#f2d2c5\\">
+    <path d=\\"M173.544 142.001h17v8h-17z\\" />
+    <path d=\\"M173.861 141.682a8.697 8.697 0 0 0 17.277 1.235 8.411 8.411 0 0 0-.594-4.55v2.634h-16v-2.634a8.343 8.343 0 0 0-.683 3.315z\\" />
+    <circle cx=\\"182.299\\" cy=\\"141.512\\" r=\\"4.258\\" />
+  </g>
+  <path
+    d=\\"M137.122 177H72.348a4.965 4.965 0 0 1-4.914-4.251l-4.66-32.102a4.938 4.938 0 0 1 4.886-5.646h75.142a4.965 4.965 0 0 1 4.889 5.832l-5.692 32.08a4.953 4.953 0 0 1-4.877 4.088z\\"
+    fill=\\"#2d465f\\"
+  />
+  <path
+    d=\\"M141.82 185H67.447a5.685 5.685 0 0 1-5.618-4.301A5.573 5.573 0 0 1 67.438 174h74.374a5.683 5.683 0 0 1 5.617 4.302 5.574 5.574 0 0 1-5.61 6.698z\\"
+    fill=\\"#253f54\\"
+  />
+  <circle cx=\\"103.777\\" cy=\\"156.101\\" r=\\"6.983\\" fill=\\"#3a556b\\" />
+  <path
+    d=\\"M38.544 185h-20v-19.103a3.896 3.896 0 0 1 3.896-3.896h12.207a3.896 3.896 0 0 1 3.897 3.896z\\"
+    fill=\\"#2d465f\\"
+  />
+  <circle cx=\\"20.88\\" cy=\\"148.709\\" r=\\"4.27\\" fill=\\"#2f4ab8\\" />
+  <path
+    d=\\"M143.047 135h-18.745l18.69 33.697 4.944-27.864a4.965 4.965 0 0 0-4.89-5.832z\\"
+    fill=\\"#2e4c60\\"
+  />
+</svg>;
+"
 `;
 
 exports[`svgToJsx works on an airplane 1`] = `
 "<svg viewBox=\\"0 0 18 18\\">
-  <path d=\\"M7 4l1.6 4H5.5S4.1 6 3 6h-.8L3 8l1 3h4.6L7 15h2l3.2-4H14c1 0 2-.7 2-1.5S15 8 14 8h-1.8L9 4H7z\\"/>
-</svg>"
+  <path d=\\"M7 4l1.6 4H5.5S4.1 6 3 6h-.8L3 8l1 3h4.6L7 15h2l3.2-4H14c1 0 2-.7 2-1.5S15 8 14 8h-1.8L9 4H7z\\" />
+</svg>;
+"
 `;
 
 exports[`svgToJsx works on an apple 1`] = `
 "<svg viewBox=\\"0 0 18 18\\" width=\\"30\\" height=\\"30\\">
-  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\"/>
-  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\"/>
-</svg>"
+  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
+  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+</svg>;
+"
 `;
 
 exports[`svgToJsx works on one with style attributes 1`] = `
 "<svg width=\\"79.4\\" height=\\"69.855\\" viewBox=\\"0 0 79.4 69.855\\">
   <defs>
     <clipPath id=\\"styleattributes-a\\" transform=\\"translate(-2.3 -8.8)\\">
-      <rect x=\\"2.3\\" y=\\"24\\" width=\\"60\\" height=\\"43\\" rx=\\"4.5\\" ry=\\"4.5\\" fill=\\"none\\"/>
+      <rect
+        x=\\"2.3\\"
+        y=\\"24\\"
+        width=\\"60\\"
+        height=\\"43\\"
+        rx=\\"4.5\\"
+        ry=\\"4.5\\"
+        fill=\\"none\\"
+      />
     </clipPath>
   </defs>
   <title>data-viz-maps</title>
-  <path d=\\"M54.9 28.2l8.3-1.5a1.817 1.817 0 0 1 2.1 1.4l5.3 29a1.817 1.817 0 0 1-1.4 2.1l-8.3 1.5a1.817 1.817 0 0 1-2.1-1.4l-5.3-29a1.743 1.743 0 0 1 1.4-2.1z\\" fill=\\"#c5b8ed\\"/>
-  <path d=\\"M79.4 36.4L77.6 29a1.8 1.8 0 0 0-2.1-1.3c-.2 0-.3.1-.5.2l-6.7 3.8-9.1 20.9a3.189 3.189 0 0 0 1.6 4.2l5.1 2.3a3.189 3.189 0 0 0 4.2-1.6l8.7-20z\\" fill=\\"#dad2f9\\"/>
-  <path fill=\\"#dad2f9\\" d=\\"M60.857 37.259l5.901-1.085.362 1.967-5.901 1.085zM59.96 32.358l5.901-1.085.362 1.967-5.901 1.085z\\"/>
-  <path d=\\"M58.2 48.2h13.6a3.159 3.159 0 0 1 3.2 3.2V65a3.159 3.159 0 0 1-3.2 3.2H58.2A3.159 3.159 0 0 1 55 65V51.4a3.222 3.222 0 0 1 3.2-3.2z\\" fill=\\"#c5b8ed\\"/>
-  <path fill=\\"#5a39c3\\" d=\\"M21 58.2h19v4H21z\\"/>
-  <path d=\\"M4.5 15.2h51a4.481 4.481 0 0 1 4.5 4.5v34a4.481 4.481 0 0 1-4.5 4.5h-51A4.481 4.481 0 0 1 0 53.7v-34a4.481 4.481 0 0 1 4.5-4.5z\\" fill=\\"#5a39c3\\"/>
-  <path d=\\"M22.1 45.9a2.342 2.342 0 0 1-1.7.7h-5a2.06 2.06 0 0 0-1.7.7l-3 2.9h49.4V20.1a4.7 4.7 0 0 0-4.5-4.9H23.5v9.9a2.456 2.456 0 0 1-2.5 2.4h-3.5a2.523 2.523 0 0 0-2.5 2.4V34a2.609 2.609 0 0 0 .7 1.7l6.6 6.5a2.357 2.357 0 0 1 .1 3.3l-.1.1z\\" fill=\\"#774cef\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <path d=\\"M0 50.2h60v3.5a4.481 4.481 0 0 1-4.5 4.5h-51A4.481 4.481 0 0 1 0 53.7v-3.5z\\" fill=\\"#774cef\\"/>
-  <path fill=\\"#774cef\\" d=\\"M18 62.2h26v6H18z\\"/>
-  <path fill=\\"#dad2f9\\" d=\\"M70.2 13l-1.6 3.2-3.2 1.6 3.2 1.5 1.6 3.3 1.6-3.3 3.2-1.5-3.2-1.6-1.6-3.2zM49.2 0l-1.6 3.2-3.2 1.6 3.2 1.5 1.6 3.3 1.6-3.3L54 4.8l-3.2-1.6L49.2 0z\\"/>
-  <path d=\\"M79.4 36.4a4.822 4.822 0 0 1-3.565-2.513 4.342 4.342 0 0 0-5.695-2.427 5.918 5.918 0 0 1-1.87.32l.03-.08 6.7-3.8c.2-.1.3-.2.5-.2a1.8 1.8 0 0 1 2.1 1.3z\\" fill=\\"#c5b8ed\\"/>
-  <circle cx=\\"66.896\\" cy=\\"61.496\\" r=\\"2.5\\" transform=\\"rotate(-10.422 17.502 69.707)\\" fill=\\"#dad2f9\\"/>
-  <circle cx=\\"30.5\\" cy=\\"54.7\\" r=\\"1.5\\" fill=\\"#5a39c3\\"/>
-  <circle cx=\\"21.6\\" cy=\\"29.1\\" r=\\"5.8\\" fill=\\"#c5b8ed\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"31.9\\" cy=\\"40.5\\" r=\\"1.4\\" fill=\\"#c5b8ed\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"47.8\\" cy=\\"31.6\\" r=\\"1.4\\" fill=\\"#c5b8ed\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"31\\" cy=\\"24.5\\" r=\\"1.4\\" fill=\\"#c5b8ed\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"21.6\\" cy=\\"29.1\\" r=\\"3.2\\" fill=\\"#dad2f9\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"40.5\\" cy=\\"42.7\\" r=\\"3.5\\" fill=\\"#c5b8ed\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
-  <circle cx=\\"40.5\\" cy=\\"42.7\\" r=\\"1.7\\" fill=\\"#dad2f9\\" opacity=\\".5\\" style=\\"isolation:isolate\\"/>
+  <path
+    d=\\"M54.9 28.2l8.3-1.5a1.817 1.817 0 0 1 2.1 1.4l5.3 29a1.817 1.817 0 0 1-1.4 2.1l-8.3 1.5a1.817 1.817 0 0 1-2.1-1.4l-5.3-29a1.743 1.743 0 0 1 1.4-2.1z\\"
+    fill=\\"#c5b8ed\\"
+  />
+  <path
+    d=\\"M79.4 36.4L77.6 29a1.8 1.8 0 0 0-2.1-1.3c-.2 0-.3.1-.5.2l-6.7 3.8-9.1 20.9a3.189 3.189 0 0 0 1.6 4.2l5.1 2.3a3.189 3.189 0 0 0 4.2-1.6l8.7-20z\\"
+    fill=\\"#dad2f9\\"
+  />
+  <path
+    fill=\\"#dad2f9\\"
+    d=\\"M60.857 37.259l5.901-1.085.362 1.967-5.901 1.085zM59.96 32.358l5.901-1.085.362 1.967-5.901 1.085z\\"
+  />
+  <circle
+    cx=\\"66.896\\"
+    cy=\\"61.496\\"
+    r=\\"2.5\\"
+    transform=\\"rotate(-10.422 17.502 69.707)\\"
+    fill=\\"#dad2f9\\"
+  />
+  <path
+    d=\\"M58.2 48.2h13.6a3.159 3.159 0 0 1 3.2 3.2V65a3.159 3.159 0 0 1-3.2 3.2H58.2A3.159 3.159 0 0 1 55 65V51.4a3.222 3.222 0 0 1 3.2-3.2z\\"
+    fill=\\"#c5b8ed\\"
+  />
+  <path fill=\\"#5a39c3\\" d=\\"M21 58.2h19v4H21z\\" />
+  <path
+    d=\\"M4.5 15.2h51a4.481 4.481 0 0 1 4.5 4.5v34a4.481 4.481 0 0 1-4.5 4.5h-51A4.481 4.481 0 0 1 0 53.7v-34a4.481 4.481 0 0 1 4.5-4.5z\\"
+    fill=\\"#5a39c3\\"
+  />
+  <path
+    d=\\"M22.1 45.9a2.342 2.342 0 0 1-1.7.7h-5a2.06 2.06 0 0 0-1.7.7l-3 2.9h49.4V20.1a4.7 4.7 0 0 0-4.5-4.9H23.5v9.9a2.456 2.456 0 0 1-2.5 2.4h-3.5a2.523 2.523 0 0 0-2.5 2.4V34a2.609 2.609 0 0 0 .7 1.7l6.6 6.5a2.357 2.357 0 0 1 .1 3.3l-.1.1z\\"
+    fill=\\"#774cef\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
   <g clipPath=\\"url(#styleattributes-a)\\">
-    <path fill=\\"none\\" stroke=\\"#774cef\\" strokeMiterlimit=\\"10\\" strokeWidth=\\"2\\" d=\\"M53 10.2l-1.2 1.6\\"/>
+    <path
+      fill=\\"none\\"
+      stroke=\\"#774cef\\"
+      strokeMiterlimit=\\"10\\"
+      strokeWidth=\\"2\\"
+      d=\\"M53 10.2l-1.2 1.6\\"
+    />
   </g>
   <g clipPath=\\"url(#styleattributes-a)\\">
-    <path fill=\\"none\\" stroke=\\"#774cef\\" strokeMiterlimit=\\"10\\" strokeWidth=\\"2\\" d=\\"M24.3 67.7L23 69.2\\"/>
+    <path
+      fill=\\"none\\"
+      stroke=\\"#774cef\\"
+      strokeMiterlimit=\\"10\\"
+      strokeWidth=\\"2\\"
+      d=\\"M24.3 67.7L23 69.2\\"
+    />
   </g>
   <g clipPath=\\"url(#styleattributes-a)\\">
-    <path fill=\\"none\\" stroke=\\"#774cef\\" strokeMiterlimit=\\"10\\" strokeWidth=\\"2\\" d=\\"M66 13.2l-1.2 1.6\\"/>
+    <path
+      fill=\\"none\\"
+      stroke=\\"#774cef\\"
+      strokeMiterlimit=\\"10\\"
+      strokeWidth=\\"2\\"
+      d=\\"M66 13.2l-1.2 1.6\\"
+    />
   </g>
-</svg>"
+  <path
+    d=\\"M0 50.2h60v3.5a4.481 4.481 0 0 1-4.5 4.5h-51A4.481 4.481 0 0 1 0 53.7v-3.5z\\"
+    fill=\\"#774cef\\"
+  />
+  <circle cx=\\"30.5\\" cy=\\"54.7\\" r=\\"1.5\\" fill=\\"#5a39c3\\" />
+  <path fill=\\"#774cef\\" d=\\"M18 62.2h26v6H18z\\" />
+  <circle
+    cx=\\"21.6\\"
+    cy=\\"29.1\\"
+    r=\\"5.8\\"
+    fill=\\"#c5b8ed\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"31.9\\"
+    cy=\\"40.5\\"
+    r=\\"1.4\\"
+    fill=\\"#c5b8ed\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"47.8\\"
+    cy=\\"31.6\\"
+    r=\\"1.4\\"
+    fill=\\"#c5b8ed\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"31\\"
+    cy=\\"24.5\\"
+    r=\\"1.4\\"
+    fill=\\"#c5b8ed\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"21.6\\"
+    cy=\\"29.1\\"
+    r=\\"3.2\\"
+    fill=\\"#dad2f9\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"40.5\\"
+    cy=\\"42.7\\"
+    r=\\"3.5\\"
+    fill=\\"#c5b8ed\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <circle
+    cx=\\"40.5\\"
+    cy=\\"42.7\\"
+    r=\\"1.7\\"
+    fill=\\"#dad2f9\\"
+    opacity=\\".5\\"
+    style=\\"isolation:isolate\\"
+  />
+  <path
+    fill=\\"#dad2f9\\"
+    d=\\"M70.2 13l-1.6 3.2-3.2 1.6 3.2 1.5 1.6 3.3 1.6-3.3 3.2-1.5-3.2-1.6-1.6-3.2zM49.2 0l-1.6 3.2-3.2 1.6 3.2 1.5 1.6 3.3 1.6-3.3L54 4.8l-3.2-1.6L49.2 0z\\"
+  />
+  <path
+    d=\\"M79.4 36.4a4.822 4.822 0 0 1-3.565-2.513 4.342 4.342 0 0 0-5.695-2.427 5.918 5.918 0 0 1-1.87.32l.03-.08 6.7-3.8c.2-.1.3-.2.5-.2a1.8 1.8 0 0 1 2.1 1.3z\\"
+    fill=\\"#c5b8ed\\"
+  />
+</svg>;
+"
 `;
