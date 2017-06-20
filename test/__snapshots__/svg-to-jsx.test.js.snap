@@ -2,8 +2,14 @@
 
 exports[`svgToJsx passes SVGO plugins 1`] = `
 "<svg viewBox=\\"0 0 18 18\\">
-  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
-  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+  <g
+    style={{
+      marginTop: \\"0\\"
+    }}
+  >
+    <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
+    <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+  </g>
 </svg>;
 "
 `;
@@ -30,55 +36,37 @@ exports[`svgToJsx works on a big one 1`] = `
         </region>
         <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPS-BoldMT&apos;\\" fontSize=\\"9\\">
+            <span fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
               ##3$$,
             </span>
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8.894\\" />
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"7\\">
-              ##2$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\" />
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##2$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##1$$,
-            </span>
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8.596\\" />
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"7\\">
-              ##5$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##1$$,</span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\" />
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">##5$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##10$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##10$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##11$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##11$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##7$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##7$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##6$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##6$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##8$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##8$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
-              ##4$$
-            </span>
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">##4$$</span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
-            <span fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\" fontSize=\\"8\\">
+            <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
               ##17$$, ##18$$ ##19$$
             </span>
           </p>
@@ -88,34 +76,24 @@ exports[`svgToJsx works on a big one 1`] = `
     <g>
       <path fill=\\"none\\" d=\\"M149.275 24.298h130.49v109.036h-130.49z\\" />
       <text transform=\\"translate(235.292 30.48)\\">
-        <tspan
-          x=\\"0\\"
-          y=\\"0\\"
-          fontFamily=\\"&apos;TimesNewRomanPS-BoldMT&apos;\\"
-          fontSize=\\"9\\"
-        >
+        <tspan x=\\"0\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
           ##3$$,
         </tspan>
         <tspan
           x=\\"24.75\\"
           y=\\"0\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8.894\\"
         >
           {\\" \\"}
         </tspan>
-        <tspan
-          x=\\"26.974\\"
-          y=\\"0\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
-          fontSize=\\"7\\"
-        >
+        <tspan x=\\"26.974\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
           ##2$$
         </tspan>
         <tspan
           x=\\"2.825\\"
           y=\\"10.314\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##1$$,
@@ -123,7 +101,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"24.825\\"
           y=\\"10.314\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8.596\\"
         >
           {\\" \\"}
@@ -131,7 +109,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"26.974\\"
           y=\\"10.314\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"7\\"
         >
           ##5$$
@@ -139,7 +117,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"20.474\\"
           y=\\"19.915\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##10$$
@@ -147,7 +125,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"20.474\\"
           y=\\"29.515\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##11$$
@@ -155,7 +133,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"24.474\\"
           y=\\"39.115\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##7$$
@@ -163,7 +141,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"24.474\\"
           y=\\"48.715\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##6$$
@@ -171,7 +149,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"24.474\\"
           y=\\"58.314\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##8$$
@@ -179,7 +157,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"24.474\\"
           y=\\"67.915\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##4$$
@@ -187,7 +165,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <tspan
           x=\\"-33.526\\"
           y=\\"77.515\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
           ##17$$, ##18$$ ##19$$
@@ -220,7 +198,7 @@ exports[`svgToJsx works on a big one 1`] = `
           </region>
           <flow
             xmlns=\\"http://ns.adobe.com/Flows/1.0/\\"
-            fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+            fontFamily=\\"'TimesNewRomanPSMT'\\"
             fontSize=\\"5\\"
           >
             <p><span>##25$$</span></p>
@@ -231,7 +209,7 @@ exports[`svgToJsx works on a big one 1`] = `
         <path fill=\\"none\\" d=\\"M66.715 220.205h123.679v25.385H66.715z\\" />
         <text
           transform=\\"translate(66.715 223.68)\\"
-          fontFamily=\\"&apos;TimesNewRomanPSMT&apos;\\"
+          fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"5\\"
         >
           ##25$$
@@ -374,8 +352,14 @@ exports[`svgToJsx works on an airplane 1`] = `
 
 exports[`svgToJsx works on an apple 1`] = `
 "<svg viewBox=\\"0 0 18 18\\" width=\\"30\\" height=\\"30\\">
-  <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
-  <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+  <g
+    style={{
+      marginTop: \\"0\\"
+    }}
+  >
+    <path d=\\"M3.4 9.2c.1-1.1.4-2.3 1.5-3.2.9-.7 1.8-.8 2.9-.5 1.4.5 1 .5 2.4 0 1.5-.6 3 0 3.7.8.1.2.2.3 0 .4-1.8 1.3-1.6 3.9.3 5 .2.1.3.2.2.4-.4 1-1 1.9-1.7 2.7-.5.5-1.1.7-1.8.4-.1 0-.3-.1-.4-.1-.9-.1-1.7-.1-2.5.2-.3.1-.5.2-.8.3-.4.1-.8-.1-1.1-.4-.7-.5-1.1-1.2-1.5-1.9-.7-1.1-1.2-2.7-1.2-4.1\\" />
+    <path d=\\"M11.6 2.5c0 1.2-1 2.4-2 2.7-.6.1-.8 0-.7-.6.2-1.2 1.2-2.2 2.5-2.5.2 0 .2 0 .2.2v.2\\" />
+  </g>
 </svg>;
 "
 `;
@@ -428,7 +412,9 @@ exports[`svgToJsx works on one with style attributes 1`] = `
     d=\\"M22.1 45.9a2.342 2.342 0 0 1-1.7.7h-5a2.06 2.06 0 0 0-1.7.7l-3 2.9h49.4V20.1a4.7 4.7 0 0 0-4.5-4.9H23.5v9.9a2.456 2.456 0 0 1-2.5 2.4h-3.5a2.523 2.523 0 0 0-2.5 2.4V34a2.609 2.609 0 0 0 .7 1.7l6.6 6.5a2.357 2.357 0 0 1 .1 3.3l-.1.1z\\"
     fill=\\"#774cef\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <g clipPath=\\"url(#styleattributes-a)\\">
     <path
