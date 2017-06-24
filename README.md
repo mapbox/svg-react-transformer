@@ -36,6 +36,8 @@ Returns a Promise that resolves with the JSX string.
     { removeXMLNS: true }
   ]
   ```
+- **optimize**: `?boolean` - Default: `true`.
+  If `false`, the SVG will not be processed with SVGO.
 
 ### `svgToComponentModule`
 
