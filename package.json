@@ -36,6 +36,7 @@
     "postcss": "^6.0.2",
     "postcss-js": "^1.0.0",
     "prettier": "^1.4.4",
+    "react-attr-converter": "^0.2.0",
     "stringify-object": "^3.2.0",
     "svgo": "^0.7.2"
   },
