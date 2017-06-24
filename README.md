@@ -15,14 +15,17 @@ Examples:
 
 The module exposes the following functions.
 
+- [toInlineSvg]
 - [toJsx]
 - [toComponentModule]
 
-### `toJsx`
+### `toInlineSvg`
 
-`toJsx(svg: string, options?: Object): Promise<string>`
+`toInlineSvg(svg: string, options?: Object): Promise<string>`
 
-Returns a Promise that resolves with the JSX string.
+Returns a Promsie that resolves with your SVG processed by SVGO so that it is optimized and works inline with HTML.
+
+You could use the result with `dangerouslySetInnerHTML`.
 
 **Options** (none required)
 
@@ -43,6 +46,16 @@ Returns a Promise that resolves with the JSX string.
   Use by SVGO's `cleanupIDs` plugin to scope `id` attributes.
   Any characters other than `[a-zA-Z0-9]` will be stripped.
 
+### `toJsx`
+
+`toJsx(svg: string, options?: Object): Promise<string>`
+
+Returns a Promise that resolves with the JSX string.
+
+**Options** (none required)
+
+- Any of the options for [toInlineSvg], which are passed directly to that function.
+
 ### `toComponentModule`
 
 `toComponentModule(svg: string, options?: Object): Promise<string>`
@@ -52,7 +65,7 @@ Returns a Promise that resolves with the React component module string.
 
 **Options** (none required)
 
-- **svgoPlugins**: `?Array<Object>` - See the same option for [`toJsx`].
+- **svgoPlugins**: `?Array<Object>` - See the same option for [`toInlineSvg`].
 - **name**: `?string` - Default: 'SvgComponent'.
   A name for the component class.
   Will be converted to PascalCase.
@@ -68,7 +81,9 @@ Returns a Promise that resolves with the React component module string.
   - `name`: The value of the `name` option above (converted to PascalCase).
   - `propTypes`: The value of the `propTypes` option above.
   - `defaultProps`: The value of the `defaultProps` option above.
-  - `svgJsx`: The JSX string generated from your source SVG.
+  - `jsxSvg`: The JSX string generated from your source SVG.
+  - `inlineSvg`: Your source SVG processed by SVGO for use inline with HTML.
+    In a template you could use this with `dangerouslySetInnerHTML`.
 
 ## What about other modules that do similar things?
 
@@ -98,5 +113,6 @@ So (as long as you outsource the second step), *there is actually no problem to 
 That's the goal of this package: provide an API to accomplish those steps (without unnecessarily reimplementing functionality that (should) belong to other packages). Ideally, then, this package could be *used* by Webpack loaders, Browserify transforms, CLIs, Gulp plugins, etc., to save them from reimplementing the same functionality over and over again.
 
 
+[toInlineSvg]: #toinlinesvg
 [toJsx]: #tojsx
 [toComponentModule]: #tocomponentmodule

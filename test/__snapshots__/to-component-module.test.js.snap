@@ -85,7 +85,7 @@ module.exports = SvgComponent;
 "
 `;
 
-exports[`toComponentModule options.template 1`] = `
+exports[`toComponentModule options.template function 1`] = `
 "Fakery
 { width: PropTypes.number }
 <svg viewBox=\\"0 0 18 18\\" width=\\"30\\" height=\\"30\\"><g style={{

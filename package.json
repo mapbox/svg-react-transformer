@@ -38,7 +38,8 @@
     "prettier": "^1.4.4",
     "react-attr-converter": "^0.2.0",
     "stringify-object": "^3.2.0",
-    "svgo": "^0.7.2"
+    "svgo": "^0.7.2",
+    "svgstore": "^2.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

@@ -155,12 +155,12 @@ describe('toComponentModule', () => {
     });
   });
 
-  test('options.template', () => {
+  test('options.template function', () => {
     const options = {
       name: 'Fakery',
       propTypes: `{ width: PropTypes.number }`,
       template: data => {
-        return `${data.name}\n${data.propTypes}\n${data.svgJsx}`;
+        return `${data.name}\n${data.propTypes}\n${data.jsxSvg}`;
       }
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
