@@ -13,45 +13,50 @@ Examples:
 
 ## API
 
-The module exposes the follwing functions.
+The module exposes the following functions.
 
-- [svgToJsx](#svgtojsx)
-- [svgToComponentModule](#svgtocomponentmodule)
+- [toJsx]
+- [toComponentModule]
 
-### `svgToJsx`
+### `toJsx`
 
-`svgToJsx(svg: string, options?: Object): Promise<string>`
+`toJsx(svg: string, options?: Object): Promise<string>`
 
-Runs an SVG string through SVGO, then converts the output to JSX.
 Returns a Promise that resolves with the JSX string.
 
 **Options** (none required)
 
 - **svgoPlugins**: `?Array<Object>` - [SVGO](https://github.com/svg/svgo) plugins.
-  The following are automatically set, so no need to add them:
+  The following are all important for SVG that will be inserted inline into a document, so they are automatically set (but can be overridden):
   ```js
   [
     { removeDoctype: true },
     { removeComments: true },
-    { removeXMLNS: true }
+    { removeXMLNS: true },
+    {
+      // svgId is determined by the `id` option, below.
+      cleanupIDs: { prefix: svgId + '-' }
+    }
   ]
   ```
-- **optimize**: `?boolean` - Default: `true`.
-  If `false`, the SVG will not be processed with SVGO.
+- **id**: `?string` - Default: a [`cuid`](https://github.com/ericelliott/cuid)-generated string.
+  Use by SVGO's `cleanupIDs` plugin to scope `id` attributes.
+  Any characters other than `[a-zA-Z0-9]` will be stripped.
 
-### `svgToComponentModule`
+### `toComponentModule`
 
-`svgToComponentModule(svg: string, options?: Object): Promise<string>`
+`toComponentModule(svg: string, options?: Object): Promise<string>`
 
-Runs an SVG string through `svgToJsx` (above), then inserts the JSX into a templated React component module.
+Runs an SVG string through [`toJsx`], then inserts the JSX into a templated React component module.
 Returns a Promise that resolves with the React component module string.
 
 **Options** (none required)
 
-- **svgoPlugins**: `?Array<Object>` - See the same option for `svgToJsx` (above).
+- **svgoPlugins**: `?Array<Object>` - See the same option for [`toJsx`].
 - **name**: `?string` - Default: 'SvgComponent'.
   A name for the component class.
   Will be converted to PascalCase.
+  Also, will be passed as the `id` option to [`toJsx`].
 - **propTypes**: `?string` - A stringified object defining `propTypes` for the generated React component.
   It should be the string of the code that you'd put in here: `MyComponent.propTypes = ${this.place}`.
   If this option is provided, the default template will include `const PropTypes = require('prop-types');`.
@@ -84,10 +89,14 @@ SVGO works on its own.
 You just need to expose its options.
 
 The second step ("Transform the SVG to JSX (or a React element).") is reimplemented in a hundred different ways.
-But this problem should be outsourced to another, more low-level package, because transforming HTML and XML to React components is not a problem specific to SVG. (See [html-to-react](https://github.com/aknuds1/html-to-react) and [htmltojsx](https://www.npmjs.com/package/htmltojsx).)
+For most packages this problem should be outsourced to another, more low-level package that is shared, because transforming HTML and XML to React components is not a problem specific to any of them.
 
 The third step ("Plug the JSX into a React component module.") is also not really a problem to be solved, because we have template literals and other means of templating.
 
 So (as long as you outsource the second step), *there is actually no problem to be solved, just an API to provide.*
 
 That's the goal of this package: provide an API to accomplish those steps (without unnecessarily reimplementing functionality that (should) belong to other packages). Ideally, then, this package could be *used* by Webpack loaders, Browserify transforms, CLIs, Gulp plugins, etc., to save them from reimplementing the same functionality over and over again.
+
+
+[toJsx]: #tojsx
+[toComponentModule]: #tocomponentmodule

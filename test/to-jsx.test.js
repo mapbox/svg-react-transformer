@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const prettier = require('prettier');
-const svgToJsx = require('../lib/svg-to-jsx');
+const toJsx = require('../lib/to-jsx');
 
 const getFixture = name => {
   return fs.readFileSync(
@@ -12,33 +12,33 @@ const getFixture = name => {
   );
 };
 
-describe('svgToJsx', () => {
+describe('toJsx', () => {
   test('works on an airplane', () => {
-    return svgToJsx(getFixture('airplane'), { id: 'airplane' }).then(result => {
+    return toJsx(getFixture('airplane'), { id: 'airplane' }).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on an apple', () => {
-    return svgToJsx(getFixture('apple'), { id: 'apple' }).then(result => {
+    return toJsx(getFixture('apple'), { id: 'apple' }).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on a big one', () => {
-    return svgToJsx(getFixture('big'), { id: 'big' }).then(result => {
+    return toJsx(getFixture('big'), { id: 'big' }).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on a layered one, preserving order', () => {
-    return svgToJsx(getFixture('layered'), { id: 'layered' }).then(result => {
+    return toJsx(getFixture('layered'), { id: 'layered' }).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('works on one with style attributes', () => {
-    return svgToJsx(getFixture('style-attributes'), {
+    return toJsx(getFixture('style-attributes'), {
       id: 'style-attributes'
     }).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
@@ -50,13 +50,13 @@ describe('svgToJsx', () => {
       svgoPlugins: [{ removeDimensions: true }],
       id: 'apple'
     };
-    return svgToJsx(getFixture('apple'), options).then(result => {
+    return toJsx(getFixture('apple'), options).then(result => {
       expect(prettier.format(result)).toMatchSnapshot();
     });
   });
 
   test('catches SVGO error', () => {
-    return expect(svgToJsx('#<foo##p', { id: 'error' })).rejects.toMatch(
+    return expect(toJsx('#<foo##p', { id: 'error' })).rejects.toMatch(
       'Error in parsing SVG'
     );
   });

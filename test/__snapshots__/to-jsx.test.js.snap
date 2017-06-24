@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`svgToJsx passes SVGO plugins 1`] = `
+exports[`toJsx passes SVGO plugins 1`] = `
 "<svg viewBox=\\"0 0 18 18\\">
   <g
     style={{
@@ -14,7 +14,7 @@ exports[`svgToJsx passes SVGO plugins 1`] = `
 "
 `;
 
-exports[`svgToJsx works on a big one 1`] = `
+exports[`toJsx works on a big one 1`] = `
 "<svg width=\\"414\\" height=\\"324\\" viewBox=\\"0 0 414 324\\">
   <path fill=\\"#FFF\\" d=\\"M.333.333h414v324h-414z\\" />
   <path fill=\\"none\\" d=\\"M152.333 24.298h127.432v109.036H152.333z\\" />
@@ -221,7 +221,7 @@ exports[`svgToJsx works on a big one 1`] = `
 "
 `;
 
-exports[`svgToJsx works on a layered one, preserving order 1`] = `
+exports[`toJsx works on a layered one, preserving order 1`] = `
 "<svg data-name=\\"Layer 1\\" width=\\"200\\" height=\\"200\\" viewBox=\\"0 0 200 200\\">
   <defs>
     <clipPath id=\\"layered-a\\">
@@ -343,14 +343,14 @@ exports[`svgToJsx works on a layered one, preserving order 1`] = `
 "
 `;
 
-exports[`svgToJsx works on an airplane 1`] = `
+exports[`toJsx works on an airplane 1`] = `
 "<svg viewBox=\\"0 0 18 18\\">
   <path d=\\"M7 4l1.6 4H5.5S4.1 6 3 6h-.8L3 8l1 3h4.6L7 15h2l3.2-4H14c1 0 2-.7 2-1.5S15 8 14 8h-1.8L9 4H7z\\" />
 </svg>;
 "
 `;
 
-exports[`svgToJsx works on an apple 1`] = `
+exports[`toJsx works on an apple 1`] = `
 "<svg viewBox=\\"0 0 18 18\\" width=\\"30\\" height=\\"30\\">
   <g
     style={{
@@ -364,7 +364,7 @@ exports[`svgToJsx works on an apple 1`] = `
 "
 `;
 
-exports[`svgToJsx works on one with style attributes 1`] = `
+exports[`toJsx works on one with style attributes 1`] = `
 "<svg width=\\"79.4\\" height=\\"69.855\\" viewBox=\\"0 0 79.4 69.855\\">
   <defs>
     <clipPath id=\\"styleattributes-a\\" transform=\\"translate(-2.3 -8.8)\\">

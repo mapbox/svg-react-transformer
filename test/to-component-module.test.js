@@ -10,7 +10,7 @@ const crypto = require('crypto');
 const path = require('path');
 const pify = require('pify');
 const del = require('del');
-const svgToComponentModule = require('../lib/svg-to-component-module');
+const toComponentModule = require('../lib/to-component-module');
 
 const tmpDir = path.join(__dirname, './tmp');
 
@@ -38,7 +38,7 @@ const renderComponent = (Component, props) => {
   );
 };
 
-describe('svgToComponentModule', () => {
+describe('toComponentModule', () => {
   beforeAll(() => {
     return pify(fs.mkdir)(tmpDir);
   });
@@ -52,25 +52,25 @@ describe('svgToComponentModule', () => {
   });
 
   test('works with an airplane', () => {
-    return svgToComponentModule(getFixture('airplane')).then(result => {
+    return toComponentModule(getFixture('airplane')).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works with an apple', () => {
-    return svgToComponentModule(getFixture('apple')).then(result => {
+    return toComponentModule(getFixture('apple')).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works with a big one', () => {
-    return svgToComponentModule(getFixture('big')).then(result => {
+    return toComponentModule(getFixture('big')).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
 
   test('works with one with style attributes', () => {
-    return svgToComponentModule(getFixture('style-attributes'), {
+    return toComponentModule(getFixture('style-attributes'), {
       name: 'style-attributes'
     }).then(result => {
       expect(result).toMatchSnapshot();
@@ -78,7 +78,7 @@ describe('svgToComponentModule', () => {
   });
 
   test('creates valid React components from an airplane', () => {
-    return svgToComponentModule(getFixture('airplane'))
+    return toComponentModule(getFixture('airplane'))
       .then(result => {
         return loadOutputModule(result);
       })
@@ -89,7 +89,7 @@ describe('svgToComponentModule', () => {
   });
 
   test('creates valid React components from a big messy SVG', () => {
-    return svgToComponentModule(getFixture('big'))
+    return toComponentModule(getFixture('big'))
       .then(result => {
         return loadOutputModule(result);
       })
@@ -100,7 +100,7 @@ describe('svgToComponentModule', () => {
   });
 
   test('Component puts props on <svg> element', () => {
-    return svgToComponentModule(getFixture('apple'))
+    return toComponentModule(getFixture('apple'))
       .then(result => {
         return loadOutputModule(result);
       })
@@ -117,7 +117,7 @@ describe('svgToComponentModule', () => {
     const options = {
       svgoPlugins: [{ removeDoctype: true }, { removeDimensions: true }]
     };
-    return svgToComponentModule(getFixture('apple'), options).then(result => {
+    return toComponentModule(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
@@ -126,7 +126,7 @@ describe('svgToComponentModule', () => {
     const options = {
       name: 'apple'
     };
-    return svgToComponentModule(getFixture('apple'), options).then(result => {
+    return toComponentModule(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
@@ -138,7 +138,7 @@ describe('svgToComponentModule', () => {
         height: PropTypes.number.isRequired
       }`
     };
-    return svgToComponentModule(getFixture('apple'), options).then(result => {
+    return toComponentModule(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
@@ -150,10 +150,7 @@ describe('svgToComponentModule', () => {
         focusable: 'false'
       }`
     };
-    return svgToComponentModule(
-      getFixture('airplane'),
-      options
-    ).then(result => {
+    return toComponentModule(getFixture('airplane'), options).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
@@ -166,7 +163,7 @@ describe('svgToComponentModule', () => {
         return `${data.name}\n${data.propTypes}\n${data.svgJsx}`;
       }
     };
-    return svgToComponentModule(getFixture('apple'), options).then(result => {
+    return toComponentModule(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
     });
   });
