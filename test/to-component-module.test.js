@@ -167,4 +167,31 @@ describe('toComponentModule', () => {
       expect(result).toMatchSnapshot();
     });
   });
+
+  test('options.template "useSymbol"', () => {
+    const options = {
+      name: 'Fakery',
+      propTypes: `{ width: PropTypes.number }`,
+      template: 'useSymbol'
+    };
+    return toComponentModule(getFixture('apple'), options).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('invalid options.template', () => {
+    const options = {
+      name: 'Fakery',
+      propTypes: `{ width: PropTypes.number }`,
+      template: 'usssseSymbol'
+    };
+    return toComponentModule(getFixture('apple'), options).then(
+      () => {
+        throw new Error('Should have errored');
+      },
+      error => {
+        expect(error.message).toContain('usssseSymbol');
+      }
+    );
+  });
 });

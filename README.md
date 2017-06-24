@@ -85,6 +85,32 @@ Returns a Promise that resolves with the React component module string.
   - `inlineSvg`: Your source SVG processed by SVGO for use inline with HTML.
     In a template you could use this with `dangerouslySetInnerHTML`.
 
+## Component module templates
+
+### `default` template
+
+The default template creates a module exporting a component that that renders the SVG as React elements.
+
+Be aware that this renders the full SVG every time it's used.
+If you use `React.renderToString`, then, you will be repeating that SVG's markup as often as you use it.
+To avoid this, you could consider the `useSymbol` template.
+
+### `useSymbol` template
+
+This template creates two components:
+- one that renders your SVG transformed into a `<symbol>` (by [svgstore](https://github.com/svgstore/svgstore));
+- one that renders a `<use>` tag that references the `<symbol>`.
+
+The module only exports the component that renders a `<use>` tag.
+Internally, this component uses `react-dom` to render the `<symbol>` component *as needed*.
+If the `<use>` component is used multiple times, only one `<symbol>` will render.
+If all `<use>` components are removed, the `<symbol>` is also removed.
+
+This template may be more efficient if you render the same SVG many times.
+
+There is an important caveat: If you `React.renderToString`, the `<symbol>` component will not be included in that HTML string.
+It will only be rendered after the first `<use>` component mounts.
+
 ## What about other modules that do similar things?
 
 There are many, many npm packages for converting SVGs to React components.
