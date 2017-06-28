@@ -1,4 +1,4 @@
-# svg-react-transformer
+# @mapbox/svg-react-transformer
 
 [![Build Status](https://travis-ci.org/mapbox/svg-react-transformer.svg?branch=master)](https://travis-ci.org/mapbox/svg-react-transformer)
 
