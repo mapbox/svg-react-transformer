@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint *.js test lib",
-    "format": "prettier --single-quote --write '{,lib/,test/}*.js'",
+    "lint": "eslint .",
+    "format": "prettier --single-quote --write '{,lib/**/,test/**/}*.js'",
     "test-jest": "jest",
     "pretest": "npm run lint",
     "test": "jest"
@@ -48,15 +48,16 @@
     "del": "^3.0.0",
     "eslint": "^4.0.0",
     "eslint-plugin-node": "^5.0.0",
-    "husky": "^0.13.4",
+    "husky": "^0.14.1",
     "jest": "^20.0.4",
-    "lint-staged": "^3.6.1",
+    "lint-staged": "^4.0.0",
     "pify": "^3.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "lint-staged": {
-    "{,lib/,test/}*.js": [
+    "{,lib/**/,test/**/}*.js": [
+      "eslint",
       "prettier --single-quote --write",
       "git add"
     ]

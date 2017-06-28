@@ -402,7 +402,9 @@ class SvgComponent extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"5\\"
                 >
-                  <p><span>##25$$</span></p>
+                  <p>
+                    <span>##25$$</span>
+                  </p>
                 </flow>
               </flowDef>
             </foreignObject>
