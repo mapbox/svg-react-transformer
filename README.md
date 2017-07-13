@@ -75,7 +75,9 @@ Returns a Promise that resolves with the React component module string.
   If this option is provided, the default template will include `const PropTypes = require('prop-types');`.
 - **defaultProps**: `?string` - A stringified object defining `defaultProps` for the generated React component.
   It should be the string of the code that you'd put in here: `MyComponent.defaultProps = ${this.place}`.
-- **template**: `?Function` - An alternative template function.
+- **template**: `string | Function | void` - If a `string`, can be one of the [component module template](#component-module-templates) values described below: `default`, `useSymbol`.
+  The default value is `default`.
+  If a `function`, it is an alternative template function.
   Receives as its argument a data object and must return a string.
   Data includes:
   - `name`: The value of the `name` option above (converted to PascalCase).
