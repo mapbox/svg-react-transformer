@@ -215,4 +215,16 @@ describe('toComponentModule', () => {
       }
     );
   });
+
+  test('options.precompile', () => {
+    return toComponentModule(getFixture('airplane'), { precompile: true })
+      .then(result => {
+        expect(result).toMatchSnapshot();
+        return loadOutputModule(result);
+      })
+      .then(Output => {
+        const rendered = renderComponent(Output);
+        expect(rendered).toMatchSnapshot();
+      });
+  });
 });

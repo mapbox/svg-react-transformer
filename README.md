@@ -86,6 +86,8 @@ Returns a Promise that resolves with the React component module string.
   - `jsxSvg`: The JSX string generated from your source SVG.
   - `inlineSvg`: Your source SVG processed by SVGO for use inline with HTML.
     In a template you could use this with `dangerouslySetInnerHTML`.
+- **precompile**: `boolean` - Default: `false`.
+  If `true`, the template will be passed through Babel (with the ES2015 and React presets), so you don't have to compile it yourself.
 
 ## Component module templates
 
