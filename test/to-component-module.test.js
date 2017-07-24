@@ -69,7 +69,7 @@ describe('toComponentModule', () => {
     });
   });
 
-  test('works with one with style attributes', () => {
+  test('works with a template with style attributes', () => {
     return toComponentModule(getFixture('style-attributes'), {
       name: 'style-attributes'
     }).then(result => {
@@ -173,6 +173,27 @@ describe('toComponentModule', () => {
       name: 'Fakery',
       propTypes: `{ width: PropTypes.number }`,
       template: 'useSymbol'
+    };
+    return toComponentModule(getFixture('apple'), options).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('options.template "fancy"', () => {
+    const options = {
+      name: 'Fakery',
+      template: 'fancy'
+    };
+    return toComponentModule(getFixture('apple'), options).then(result => {
+      expect(result).toMatchSnapshot();
+    });
+  });
+
+  test('options.template "fancy" with user-defined removeAttrs plugin', () => {
+    const options = {
+      name: 'Fakery',
+      template: 'fancy',
+      svgoPlugins: [{ removeAttrs: { attrs: ['style'] } }]
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
       expect(result).toMatchSnapshot();
