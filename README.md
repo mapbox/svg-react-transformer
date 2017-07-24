@@ -114,6 +114,15 @@ This template may be more efficient than the `default` template if you render th
 There is an important caveat: If you `React.renderToString`, the `<symbol>` component will not be included in that HTML string.
 It will only be rendered after the first `<use>` component mounts.
 
+### `fancy` template
+
+This is an opinionated template with a few distinguishing features:
+
+- Applies some accessibility patterns.
+  Adds `aria-hidden` and `focusable="false"` to the `<svg>` element, and exposes an `alt` prop for alternative text (hidden from sight, legible for screen readers).
+- Uses the SVG's `viewbox` attribute to determine an aspect ratio, and applies a wrapper `<div>` and CSS so that the element can have a fluid width while preserving the aspect ratio (across browsers).
+- Adds extra SVGO plugins `removeTitle`, `removeStyleElement`, and `removeAttrs` to remove `width` and `height` from the `<svg>` element.
+
 ## What about other modules that do similar things?
 
 There are many, many npm packages for converting SVGs to React components.
