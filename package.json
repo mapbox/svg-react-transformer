@@ -39,7 +39,7 @@
     "postcss": "^6.0.2",
     "postcss-js": "^1.0.0",
     "prettier": "^1.4.4",
-    "react-attr-converter": "^0.2.0",
+    "react-attr-converter": "^0.3.1",
     "stringify-object": "^3.2.0",
     "svgo": "^0.7.2",
     "svgstore": "^2.0.2"
@@ -56,7 +56,7 @@
     "react-dom": "^15.6.1"
   },
   "lint-staged": {
-    "{,lib/**/,test/**/}*.js": [
+    "**/*.js": [
       "eslint",
       "prettier --single-quote --write",
       "git add"
@@ -64,8 +64,6 @@
   },
   "jest": {
     "coverageReporters": [
-      "json",
-      "lcov",
       "text",
       "html"
     ],
