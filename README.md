@@ -33,8 +33,8 @@ It's also used internally.
 
 #### svg
 
-Type: `string`
-Required
+Type: `string`.
+**Required**.
 
 The input SVG.
 
@@ -42,7 +42,7 @@ The input SVG.
 
 ##### svgoPlugins
 
-Type: `Array<Object>`
+Type: `Array<Object>`.
 
 [SVGO](https://github.com/svg/svgo) plugins.
 
@@ -62,7 +62,7 @@ The following are all important for SVG that will be inserted inline into an HTM
 
 ##### id
 
-Type: `string`
+Type: `string`.
 Default: a [`cuid`](https://github.com/ericelliott/cuid)-generated string.
 
 Used by SVGO's `cleanupIDs` plugin to scope `id` attributes.
@@ -75,8 +75,8 @@ Returns a Promise that resolves with the JSX string.
 
 #### svg
 
-Type: `string`
-Required
+Type: `string`.
+**Required**.
 
 The input SVG.
 
@@ -92,8 +92,8 @@ Returns a Promise that resolves with the React component module string.
 
 #### svg
 
-Type: `string`
-Required
+Type: `string`.
+**Required**.
 
 The input SVG.
 
@@ -101,21 +101,21 @@ The input SVG.
 
 ##### svgoPlugins
 
-Type: `Array<Object>`
+Type: `Array<Object>`.
 
 See [the same option for `toInlineSvg`](#svgoplugins).
 
 ##### name
 
-Type: `string`
-Default: 'SvgComponent'
+Type: `string`.
+Default: `'SvgComponent'`.
 
 A name for the React component class.
 The value will be converted to PascalCase (e.g. `fancy-pants -> FancyPants`) and then passed as the `id` option to [`toJsx`].
 
 ##### propTypes
 
-Type: `string`
+Type: `string`.
 
 A *stringified* object defining `propTypes` for the generated React component.
 It should be the string of the code that you'd put in here: `MyComponent.propTypes = ${this.place}`, e.g. `'{ title: PropTypes.string.isRequired }'`.
@@ -125,7 +125,7 @@ If this value is defined, the built-in templates will include `const PropTypes =
 
 ##### defaultProps
 
-Type: `string`
+Type: `string`.
 
 A *stringified* object defining `defaultProps` for the generated React component.
 It should be the string of the code that you'd put in here: `MyComponent.defaultProps = ${this.place}`, e.g. `'{ title: 'Untitled' }'`.
@@ -134,8 +134,8 @@ This value will be passed to your selected template.
 
 ##### template
 
-Type: `Function | 'default' | 'fancy'`
-Default: 'default'
+Type: `Function | 'default' | 'fancy'`.
+Default: `'default'`.
 
 If the value is a `string`, it can be one of the [component module template](#component-module-templates) values described below: [`default`](#default), [`fancy`](#fancy).
 
@@ -152,8 +152,8 @@ The data object argument includes the following properties:
 
 ##### precompile
 
-Type: `boolean`
-Default: `false`
+Type: `boolean`.
+Default: `false`.
 
 If `true`, the template will be passed through Babel (with the ES2015 and React presets), so you don't have to compile it yourself.
 
