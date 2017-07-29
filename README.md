@@ -19,13 +19,9 @@ npm install @mapbox/svg-react-transformer
 
 ## API
 
-The module exposes the following functions.
+### toInlineSvg
 
-- [toInlineSvg]
-- [toJsx]
-- [toComponentModule]
-
-### `toInlineSvg(svg, [options])`
+`svgReactTransformer.toInlineSvg(svg, [options])`
 
 Returns a Promise that resolves with your SVG processed by SVGO so that it is optimized and works inline within HTML.
 You could use the result with `dangerouslySetInnerHTML`, for example.
@@ -44,7 +40,7 @@ The input SVG.
 
 Type: `Array<Object>`.
 
-[SVGO](https://github.com/svg/svgo) plugins.
+Configuration for [SVGO](https://github.com/svg/svgo) plugins.
 
 The following are all important for SVG that will be inserted inline into an HTML document, so they are automatically set (but can be overridden):
 
@@ -68,7 +64,9 @@ Default: a [`cuid`](https://github.com/ericelliott/cuid)-generated string.
 Used by SVGO's `cleanupIDs` plugin to scope `id` attributes.
 Any characters other than `[a-zA-Z0-9]` will be stripped.
 
-### `toJsx(svg, [options])`
+### toJsx
+
+`svgReactTransformer.toJsx(svg, [options])`
 
 Runs an SVG through [`toInlineSvg`], then converts the SVG to JSX.
 Returns a Promise that resolves with the JSX string.
@@ -85,7 +83,9 @@ The input SVG.
 Any of the [options for `toInlineSvg`](#options).
 These are passed directly to that function.
 
-### `toComponentModule(svg, [options])`
+### toComponentModule
+
+`svgReactTransformer.toComponentModule(svg, [options])`
 
 Runs an SVG string through [`toJsx`], then inserts the JSX into a templated React component module.
 Returns a Promise that resolves with the React component module string.
