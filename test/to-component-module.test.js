@@ -33,9 +33,7 @@ const loadOutputModule = content => {
 };
 
 const renderComponent = (Component, props) => {
-  return ReactDOMServer.renderToString(
-    React.createElement(Component, null, props)
-  );
+  return ReactDOMServer.renderToString(React.createElement(Component, props));
 };
 
 describe('toComponentModule', () => {
@@ -106,7 +104,7 @@ describe('toComponentModule', () => {
       })
       .then(Output => {
         const renderedWithProps = renderComponent(Output, {
-          width: 30,
+          width: 40,
           height: 40
         });
         expect(renderedWithProps).toMatchSnapshot();
