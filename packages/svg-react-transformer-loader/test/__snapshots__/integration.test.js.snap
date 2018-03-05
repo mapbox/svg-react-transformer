@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`svgReactTransformerLoader integration defaults 1`] = `
+"\\"use strict\\";
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\\"value\\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\\"this hasn't been initialised - super() hasn't been called\\"); } return call && (typeof call === \\"object\\" || typeof call === \\"function\\") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== \\"function\\" && superClass !== null) { throw new TypeError(\\"Super expression must either be null or a function, not \\" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require(\\"react\\");
+
+var Three = function (_React$PureComponent) {
+  _inherits(Three, _React$PureComponent);
+
+  function Three() {
+    _classCallCheck(this, Three);
+
+    return _possibleConstructorReturn(this, (Three.__proto__ || Object.getPrototypeOf(Three)).apply(this, arguments));
+  }
+
+  _createClass(Three, [{
+    key: \\"render\\",
+    value: function render() {
+      return React.createElement(
+        \\"svg\\",
+        _extends({ viewBox: \\"0 0 18 18\\" }, this.props),
+        React.createElement(\\"path\\", { d: \\"M7 4l1.6 4H5.5S4.1 6 3 6h-.8L3 8l1 3h4.6L7 15h2l3.2-4H14c1 0 2-.7 2-1.5S15 8 14 8h-1.8L9 4H7z\\" })
+      );
+    }
+  }]);
+
+  return Three;
+}(React.PureComponent);
+
+module.exports = Three;"
+`;
+
+exports[`svgReactTransformerLoader integration uncompiled 1`] = `
+"\\"use strict\\";
+const React = require(\\"react\\");
+
+class FiveSixSeven extends React.PureComponent {
+  render() {
+    return (
+      <svg viewBox=\\"0 0 18 18\\" {...this.props}>
+        <path d=\\"M7 4l1.6 4H5.5S4.1 6 3 6h-.8L3 8l1 3h4.6L7 15h2l3.2-4H14c1 0 2-.7 2-1.5S15 8 14 8h-1.8L9 4H7z\\" />
+      </svg>
+    );
+  }
+}
+
+module.exports = FiveSixSeven;
+"
+`;
