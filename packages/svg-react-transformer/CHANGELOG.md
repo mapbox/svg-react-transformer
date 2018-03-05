@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- First Lerna monorepo release.
+
 ## 1.0.1
 
 - In `'default'` template, move `{...this.props}` to *end* of the element so it can override existing attributes on the SVG.
