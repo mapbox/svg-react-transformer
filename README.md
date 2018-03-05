@@ -6,9 +6,9 @@ Transform SVGs into JSX or React component modules.
 
 This monorepo includes the following packages:
 
-- [svg-react-transformer](./packages/svg-react-transformer) includes the core, low-level transform functions to convert an SVG into JSX or React component modules. These functions take one string and output another string. They can be used by higher-level modules that target specific contexts, like the following ...
-- [svg-react-transformer-writer](./packages/svg-react-transformer-writer) is a CLI and Node API for running SVG files through svg-react-transformer and writing the React component modules to new files. Takes an SVG file, outputs a JS file.
-- [svg-react-transformer-loader](./packages/svg-react-transformer-loader) is a Webpack loader that transforms SVG files into React component modules. Allows you to `import` SVG files within Webpack-compiled JS and get a React component.
+- [**@mapbox/svg-react-transformer**](./packages/svg-react-transformer) includes the core, low-level transform functions to convert an SVG into JSX or React component modules. These functions take one string and output another string. They can be used by higher-level modules that target specific contexts, like the following ...
+- [**@mapbox/svg-react-transformer-writer**](./packages/svg-react-transformer-writer) is a CLI and Node API for running SVG files through svg-react-transformer and writing the React component modules to new files. Takes an SVG file, outputs a JS file.
+- [**@mapbox/svg-react-transformer-loader**](./packages/svg-react-transformer-loader) is a Webpack loader that transforms SVG files into React component modules. Allows you to `import` SVG files within Webpack-compiled JS and get a React component.
 
 For example, given an SVG like this:
 
