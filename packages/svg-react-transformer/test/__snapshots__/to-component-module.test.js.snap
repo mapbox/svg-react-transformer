@@ -131,10 +131,7 @@ module.exports = SvgComponent;
 exports[`toComponentModule options.template "fancy" 1`] = `
 "\\"use strict\\";
 const React = require(\\"react\\");
-class Fakery extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
+class Fakery extends React.PureComponent {
   render() {
     const containerStyle = this.props.containerStyle || {};
     if (!containerStyle.position || containerStyle.position === \\"static\\") {
@@ -180,10 +177,7 @@ module.exports = Fakery;
 exports[`toComponentModule options.template "fancy" with user-defined removeAttrs plugin 1`] = `
 "\\"use strict\\";
 const React = require(\\"react\\");
-class Fakery extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
+class Fakery extends React.PureComponent {
   render() {
     const containerStyle = this.props.containerStyle || {};
     if (!containerStyle.position || containerStyle.position === \\"static\\") {

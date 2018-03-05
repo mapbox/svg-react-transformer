@@ -22,8 +22,7 @@ function fancy(data) {
   const js = `
     'use strict';
     const React = require('react');
-    class ${data.name} extends React.Component {
-      shouldComponentUpdate() { return false; }
+    class ${data.name} extends React.PureComponent {
       render() {
         const containerStyle = this.props.containerStyle || {};
         if (!containerStyle.position || containerStyle.position === 'static') {
