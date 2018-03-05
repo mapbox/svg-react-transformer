@@ -42,10 +42,7 @@ Or a fancier React component module like this:
 ```jsx
 "use strict";
 const React = require("react");
-class SvgComponent extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
+class SvgComponent extends React.PureComponent {
   render() {
     const containerStyle = this.props.containerStyle || {};
     if (!containerStyle.position || containerStyle.position === "static") {
