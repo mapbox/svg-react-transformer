@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- `'fancy'` template clones `containerStyle` and `svgStyle` props instead of mutating them.
+
 ## 1.0.3
 
 - `'fancy'` template exports a `PureComponent` instead of one that never updates.
