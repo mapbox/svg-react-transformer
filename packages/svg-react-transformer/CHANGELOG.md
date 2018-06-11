@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.4
 
 - `'fancy'` template clones `containerStyle` and `svgStyle` props instead of mutating them.
 
