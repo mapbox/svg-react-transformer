@@ -25,7 +25,7 @@ function fancy(data) {
     class ${data.name} extends React.PureComponent {
       render() {
         const containerStyle = {};
-        Object.keys(this.props.containerStyle || {}).forEach(key => {
+        Object.keys(this.props.containerStyle).forEach(key => {
           containerStyle[key] = this.props.containerStyle[key];
         });
         if (!containerStyle.position || containerStyle.position === 'static') {
@@ -34,7 +34,7 @@ function fancy(data) {
         containerStyle.paddingBottom = '${ratio}%';
 
         const svgStyle = {};
-        Object.keys(this.props.svgStyle || {}).forEach(key => {
+        Object.keys(this.props.svgStyle).forEach(key => {
           svgStyle[key] = this.props.svgStyle[key];
         });
         svgStyle.position = 'absolute';
@@ -60,6 +60,10 @@ function fancy(data) {
         )
       }
     }
+    ${data.name}.defaultProps = {
+      containerStyle: {},
+      svgStyle: {}
+    };
     module.exports = ${data.name};
   `;
 
