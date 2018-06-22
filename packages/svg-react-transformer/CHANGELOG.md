@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+- Fix bug with converting `style` attribute strings to JSX objects in `svg-react-transformer`'s `toJsx` function.
+
 ## 1.0.4
 
 - `'fancy'` template clones `containerStyle` and `svgStyle` props instead of mutating them.
