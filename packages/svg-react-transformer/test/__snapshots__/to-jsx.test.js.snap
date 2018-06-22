@@ -475,7 +475,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"5.8\\"
     fill=\\"#c5b8ed\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"31.9\\"
@@ -483,7 +485,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"1.4\\"
     fill=\\"#c5b8ed\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"47.8\\"
@@ -491,7 +495,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"1.4\\"
     fill=\\"#c5b8ed\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"31\\"
@@ -499,7 +505,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"1.4\\"
     fill=\\"#c5b8ed\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"21.6\\"
@@ -507,7 +515,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"3.2\\"
     fill=\\"#dad2f9\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"40.5\\"
@@ -515,7 +525,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"3.5\\"
     fill=\\"#c5b8ed\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <circle
     cx=\\"40.5\\"
@@ -523,7 +535,9 @@ exports[`toJsx works on one with style attributes 1`] = `
     r=\\"1.7\\"
     fill=\\"#dad2f9\\"
     opacity=\\".5\\"
-    style=\\"isolation:isolate\\"
+    style={{
+      isolation: \\"isolate\\"
+    }}
   />
   <path
     fill=\\"#dad2f9\\"

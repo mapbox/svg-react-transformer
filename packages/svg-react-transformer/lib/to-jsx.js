@@ -42,7 +42,7 @@ function toJsx(svg, options) {
         .replace(/&apos;/g, "'")
         .replace(/&quot;/g, '"')
         // Replace style attribute values with stringified style objects.
-        .replace(/style="([\s\S]*?[^\\])"/, (match, p1) => {
+        .replace(/style="([\s\S]*?[^\\])"/g, (match, p1) => {
           return `style={${cssToStyleObjectString(p1)}}`;
         });
       return jsx;
