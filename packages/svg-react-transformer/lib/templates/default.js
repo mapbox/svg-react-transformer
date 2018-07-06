@@ -1,7 +1,5 @@
 'use strict';
 
-const prettier = require('prettier');
-
 module.exports = data => {
   let propTypesRequire = '';
   let propTypes = '';
@@ -27,5 +25,5 @@ module.exports = data => {
     ${propTypes}${defaultProps}
     module.exports = ${data.name};
   `;
-  return prettier.format(js);
+  return js;
 };

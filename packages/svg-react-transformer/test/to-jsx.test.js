@@ -15,25 +15,25 @@ const getFixture = name => {
 describe('toJsx', () => {
   test('works on an airplane', () => {
     return toJsx(getFixture('airplane'), { id: 'airplane' }).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
   test('works on an apple', () => {
     return toJsx(getFixture('apple'), { id: 'apple' }).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
   test('works on a big one', () => {
     return toJsx(getFixture('big'), { id: 'big' }).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
   test('works on a layered one, preserving order', () => {
     return toJsx(getFixture('layered'), { id: 'layered' }).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -41,7 +41,7 @@ describe('toJsx', () => {
     return toJsx(getFixture('style-attributes'), {
       id: 'style-attributes'
     }).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -51,7 +51,7 @@ describe('toJsx', () => {
       id: 'apple'
     };
     return toJsx(getFixture('apple'), options).then(result => {
-      expect(prettier.format(result)).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -61,3 +61,7 @@ describe('toJsx', () => {
     );
   });
 });
+
+function format(js) {
+  return prettier.format(js, { parser: 'babylon' });
+}

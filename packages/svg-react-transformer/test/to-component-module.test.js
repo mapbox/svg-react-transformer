@@ -10,6 +10,7 @@ const crypto = require('crypto');
 const path = require('path');
 const pify = require('pify');
 const del = require('del');
+const prettier = require('prettier');
 const toComponentModule = require('../lib/to-component-module');
 
 const tmpDir = path.join(__dirname, './tmp');
@@ -51,19 +52,19 @@ describe('toComponentModule', () => {
 
   test('works with an airplane', () => {
     return toComponentModule(getFixture('airplane')).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
   test('works with an apple', () => {
     return toComponentModule(getFixture('apple')).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
   test('works with a big one', () => {
     return toComponentModule(getFixture('big')).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -71,7 +72,7 @@ describe('toComponentModule', () => {
     return toComponentModule(getFixture('style-attributes'), {
       name: 'style-attributes'
     }).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -116,7 +117,7 @@ describe('toComponentModule', () => {
       svgoPlugins: [{ removeDoctype: true }, { removeDimensions: true }]
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -125,7 +126,7 @@ describe('toComponentModule', () => {
       name: 'apple'
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -137,7 +138,7 @@ describe('toComponentModule', () => {
       }`
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -149,7 +150,7 @@ describe('toComponentModule', () => {
       }`
     };
     return toComponentModule(getFixture('airplane'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -162,7 +163,7 @@ describe('toComponentModule', () => {
       }
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -172,7 +173,7 @@ describe('toComponentModule', () => {
       template: 'fancy'
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -183,7 +184,7 @@ describe('toComponentModule', () => {
       svgoPlugins: [{ removeAttrs: { attrs: ['style'] } }]
     };
     return toComponentModule(getFixture('apple'), options).then(result => {
-      expect(result).toMatchSnapshot();
+      expect(format(result)).toMatchSnapshot();
     });
   });
 
@@ -206,7 +207,7 @@ describe('toComponentModule', () => {
   test('options.precompile', () => {
     return toComponentModule(getFixture('airplane'), { precompile: true })
       .then(result => {
-        expect(result).toMatchSnapshot();
+        expect(format(result)).toMatchSnapshot();
         return loadOutputModule(result);
       })
       .then(Output => {
@@ -215,3 +216,7 @@ describe('toComponentModule', () => {
       });
   });
 });
+
+function format(js) {
+  return prettier.format(js, { parser: 'babylon' });
+}
