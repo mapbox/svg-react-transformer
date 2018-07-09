@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.6
 
 - Remove dependency on Prettier, which also means the output of the provided templates is not prettified.
 
