@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Remove dependency on Prettier, which also means the output of the provided templates is not prettified.
+
 ## 1.0.5
 
 - Fix bug with converting `style` attribute strings to JSX objects in `svg-react-transformer`'s `toJsx` function.

@@ -2,7 +2,7 @@
 
 const _ = require('lodash');
 const babel = require('babel-core');
-const presetEs2015 = require('babel-preset-es2015');
+const presetEnv = require('babel-preset-env');
 const presetReact = require('babel-preset-react');
 const pascalCase = require('pascal-case');
 const toJsx = require('./to-jsx');
@@ -10,7 +10,7 @@ const toInlineSvg = require('./to-inline-svg');
 const templates = require('./templates');
 const applySvgoPluginDefaults = require('./apply-svgo-plugin-defaults');
 
-const babelOptions = { presets: [presetEs2015, presetReact] };
+const babelOptions = { presets: [presetEnv, presetReact] };
 
 // See docs in README.
 function toComponentModule(svg, options) {

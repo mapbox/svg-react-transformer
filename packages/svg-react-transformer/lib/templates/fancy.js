@@ -1,7 +1,6 @@
 'use strict';
 
 const _ = require('lodash');
-const prettier = require('prettier');
 
 function fancy(data) {
   const viewboxMatch = data.jsxSvg.match(
@@ -67,7 +66,7 @@ function fancy(data) {
     module.exports = ${data.name};
   `;
 
-  return prettier.format(js);
+  return js;
 }
 
 module.exports = fancy;

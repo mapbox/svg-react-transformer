@@ -4,3 +4,4 @@ test/output
 .DS_Store
 coverage
 test/tmp
+packages/**/package-lock.json
