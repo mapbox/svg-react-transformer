@@ -6,7 +6,8 @@
   "scripts": {
     "precommit": "lint-staged",
     "postinstall": "lerna bootstrap",
-    "lint-md-partial": "remark -u remark-preset-davidtheclark --quiet --frail --no-stdout --output --",
+    "lint-md-partial":
+      "remark -u remark-preset-davidtheclark --quiet --frail --no-stdout --output --",
     "lint-md": "npm run lint-md-partial -- 'packages/!(node_modules)**/*.md'",
     "lint-js": "eslint .",
     "lint": "npm run lint-md && npm run lint-js",
@@ -16,7 +17,7 @@
     "test": "jest --maxWorkers=4"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
@@ -33,28 +34,14 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.js": [
-      "eslint",
-      "prettier --write",
-      "git add"
-    ],
-    "*.md": [
-      "npm run lint-md-partial",
-      "git add"
-    ]
+    "*.js": ["eslint", "prettier --write", "git add"],
+    "*.md": ["npm run lint-md-partial", "git add"]
   },
   "jest": {
-    "coverageReporters": [
-      "text",
-      "html"
-    ],
+    "coverageReporters": ["text", "html"],
     "clearMocks": true,
     "testEnvironment": "node",
-    "roots": [
-      "<rootDir>/packages"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/**/(*.test|test).js"
-    ]
+    "roots": ["<rootDir>/packages"],
+    "testMatch": ["<rootDir>/packages/**/(*.test|test).js"]
   }
 }
