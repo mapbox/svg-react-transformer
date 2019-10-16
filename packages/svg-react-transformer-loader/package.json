@@ -7,26 +7,20 @@
     "type": "git",
     "url": "git+https://github.com/mapbox/svg-react-transformer.git"
   },
-  "keywords": [
-    "webpack",
-    "loader",
-    "svg",
-    "react",
-    "svg-to-jsx",
-    "transform"
-  ],
+  "keywords": ["webpack", "loader", "svg", "react", "svg-to-jsx", "transform"],
   "author": "Mapbox",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mapbox/svg-react-transformer/issues"
   },
-  "homepage": "https://github.com/mapbox/svg-react-transformer/packages/svg-react-transformer-loader#readme",
+  "homepage":
+    "https://github.com/mapbox/svg-react-transformer/packages/svg-react-transformer-loader#readme",
   "dependencies": {
     "@mapbox/svg-react-transformer": "^1.0.6",
     "loader-utils": "^1.1.0",
     "pascal-case": "^2.0.1"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   }
 }

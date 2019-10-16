@@ -10,19 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/mapbox/svg-react-transformer.git"
   },
-  "keywords": [
-    "react",
-    "svg",
-    "jsx",
-    "svg-to-react",
-    "svg-to-jsx"
-  ],
+  "keywords": ["react", "svg", "jsx", "svg-to-react", "svg-to-jsx"],
   "author": "Mapbox",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mapbox/svg-react-transformer/issues"
   },
-  "homepage": "https://github.com/mapbox/svg-react-transformer/packages/svg-react-transformer-writer#readme",
+  "homepage":
+    "https://github.com/mapbox/svg-react-transformer/packages/svg-react-transformer-writer#readme",
   "dependencies": {
     "@mapbox/svg-react-transformer": "^1.0.6",
     "chalk": "^2.1.0",
@@ -37,6 +32,6 @@
     "tempy": "^0.2.1"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   }
 }

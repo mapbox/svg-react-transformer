@@ -17,12 +17,7 @@ function toInlineSvg(svg, options) {
     plugins: options.svgoPlugins
   });
 
-  return new Promise((resolve, reject) => {
-    svgo.optimize(svg, result => {
-      if (result.error) return reject(result.error);
-      resolve(result.data);
-    });
-  });
+  return svgo.optimize(svg).then(result => result.data);
 }
 
 module.exports = toInlineSvg;
