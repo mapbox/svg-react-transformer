@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`bin logs verbose output 1`] = `
-"test/fixtures/airplane.svg -> ../../tmp/airplane.js
-test/fixtures/apple.svg -> ../../tmp/apple.js
-test/fixtures/big.svg -> ../../tmp/big.js
-Transformed 3 files from SVGs to React component modules
+"[90mtest/fixtures/airplane.svg ->[39m ../../tmp/airplane.js
+[90mtest/fixtures/apple.svg ->[39m ../../tmp/apple.js
+[90mtest/fixtures/big.svg ->[39m ../../tmp/big.js
+[35mTransformed 3 files from SVGs to React component modules[39m
 "
 `;
