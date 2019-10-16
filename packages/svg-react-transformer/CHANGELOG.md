@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0
+
+- Update svgo, which also means that given the same svg input, the optimized svg output may be different.
+- Minimum Node version is now Node 8
+
 ## 1.0.6
 
 - Remove dependency on Prettier, which also means the output of the provided templates is not prettified.
