@@ -83,6 +83,6 @@ module.exports = SvgComponent;
 `lerna bootstrap` runs in a `postinstall` script.
 (If you are experiencing errors, in linting or at runtime, about missing or fouled-up dependencies, you probably need to rerun installation & bootstrapping.)
 
-Jest is installed at the top level, so you can test all repos by with `npx jest`.
+Jest is installed at the top level, so you can test all repos by with `npx jest` or `npm test`.
 
-Release with `npx lerna release`.
+Release with `mbx npm login && lerna publish --skip-npm && lerna exec mbx npm publish --tag latest`.
