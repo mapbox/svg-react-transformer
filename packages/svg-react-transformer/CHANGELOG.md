@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+- Fix bug with svg `viewBox` sometimes being removed.
+
 ## 2.0.0
 
 - Update svgo, which also means that given the same svg input, the optimized svg output may be different.
