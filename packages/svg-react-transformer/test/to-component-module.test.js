@@ -177,6 +177,18 @@ describe('toComponentModule', () => {
     });
   });
 
+  test('options.template "fancy" with svg that could trigger removeViewBox', () => {
+    const options = {
+      name: 'Fakery',
+      template: 'fancy'
+    };
+    // svgo removeViewBox plugin will, by default since v1.0.0,
+    // remove `viewBox` attr which coincides with a width / height box
+    return toComponentModule(getFixture('big'), options).then(result => {
+      expect(format(result)).toMatchSnapshot();
+    });
+  });
+
   test('options.template "fancy" with user-defined removeAttrs plugin', () => {
     const options = {
       name: 'Fakery',
