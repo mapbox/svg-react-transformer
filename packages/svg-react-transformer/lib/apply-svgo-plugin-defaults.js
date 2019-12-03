@@ -17,6 +17,7 @@ function applySvgoPluginDefaults(plugins, svgId, extraDefaults) {
   let defaultSvgoPlugins = [
     { removeDoctype: true },
     { removeComments: true },
+    { removeViewBox: false },
     { removeXMLNS: true },
     {
       cleanupIDs: {
