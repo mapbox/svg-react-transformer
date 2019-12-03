@@ -15,7 +15,7 @@ exports[`toJsx passes SVGO plugins 1`] = `
 `;
 
 exports[`toJsx works on a big one 1`] = `
-"<svg width=\\"414\\" height=\\"324\\">
+"<svg width=\\"414\\" height=\\"324\\" viewBox=\\"0 0 414 324\\">
   <path fill=\\"#FFF\\" d=\\"M.333.333h414v324h-414z\\" />
   <path fill=\\"none\\" d=\\"M152.333 24.298h127.432v109.036H152.333z\\" />
   <switch>
@@ -242,7 +242,7 @@ exports[`toJsx works on a big one 1`] = `
 `;
 
 exports[`toJsx works on a layered one, preserving order 1`] = `
-"<svg data-name=\\"Layer 1\\" width=\\"200\\" height=\\"200\\">
+"<svg data-name=\\"Layer 1\\" width=\\"200\\" height=\\"200\\" viewBox=\\"0 0 200 200\\">
   <defs>
     <clipPath id=\\"layered-a\\">
       <path
@@ -384,7 +384,7 @@ exports[`toJsx works on an apple 1`] = `
 `;
 
 exports[`toJsx works on one with style attributes 1`] = `
-"<svg width=\\"79.4\\" height=\\"69.855\\">
+"<svg width=\\"79.4\\" height=\\"69.855\\" viewBox=\\"0 0 79.4 69.855\\">
   <defs>
     <clipPath id=\\"styleattributes-a\\" transform=\\"translate(-2.3 -8.8)\\">
       <rect
