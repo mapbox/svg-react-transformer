@@ -1,6 +1,6 @@
 # @mapbox/svg-react-transformer
 
-[![Build Status](https://travis-ci.org/mapbox/svg-react-transformer.svg?branch=main)](https://travis-ci.org/mapbox/svg-react-transformer)
+[![Build Status](https://travis-ci.com/mapbox/svg-react-transformer.svg?branch=main)](https://travis-ci.com/mapbox/svg-react-transformer)
 
 Transform SVGs into JSX or React component modules.
 
