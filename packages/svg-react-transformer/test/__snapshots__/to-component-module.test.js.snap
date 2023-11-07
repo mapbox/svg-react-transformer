@@ -316,55 +316,55 @@ class Fakery extends React.PureComponent {
                 <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
-                      ##3$$,
+                      ##3&#x24;&#x24;,
                     </span>
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\" />
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-                      ##2$$
+                      ##2&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##1$$,
+                      ##1&#x24;&#x24;,
                     </span>
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\" />
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-                      ##5$$
+                      ##5&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##10$$
+                      ##10&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##11$$
+                      ##11&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##7$$
+                      ##7&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##6$$
+                      ##6&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##8$$
+                      ##8&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##4$$
+                      ##4&#x24;&#x24;
                     </span>
                   </p>
                   <p text-align=\\"right\\" text-align-last=\\"right\\">
                     <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                      ##17$$, ##18$$ ##19$$
+                      ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
                     </span>
                   </p>
                 </flow>
@@ -379,7 +379,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPS-BoldMT'\\"
                   fontSize=\\"9\\"
                 >
-                  ##3$$,
+                  ##3&#x24;&#x24;,
                 </tspan>
                 <tspan
                   x=\\"24.75\\"
@@ -395,7 +395,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"7\\"
                 >
-                  ##2$$
+                  ##2&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"2.825\\"
@@ -403,7 +403,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##1$$,
+                  ##1&#x24;&#x24;,
                 </tspan>
                 <tspan
                   x=\\"24.825\\"
@@ -419,7 +419,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"7\\"
                 >
-                  ##5$$
+                  ##5&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"20.474\\"
@@ -427,7 +427,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##10$$
+                  ##10&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"20.474\\"
@@ -435,7 +435,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##11$$
+                  ##11&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"24.474\\"
@@ -443,7 +443,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##7$$
+                  ##7&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"24.474\\"
@@ -451,7 +451,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##6$$
+                  ##6&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"24.474\\"
@@ -459,7 +459,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##8$$
+                  ##8&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"24.474\\"
@@ -467,7 +467,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##4$$
+                  ##4&#x24;&#x24;
                 </tspan>
                 <tspan
                   x=\\"-33.526\\"
@@ -475,7 +475,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"8\\"
                 >
-                  ##17$$, ##18$$ ##19$$
+                  ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
                 </tspan>
               </text>
             </g>
@@ -509,7 +509,7 @@ class Fakery extends React.PureComponent {
                     fontSize=\\"5\\"
                   >
                     <p>
-                      <span>##25$$</span>
+                      <span>##25&#x24;&#x24;</span>
                     </p>
                   </flow>
                 </flowDef>
@@ -521,7 +521,7 @@ class Fakery extends React.PureComponent {
                   fontFamily=\\"'TimesNewRomanPSMT'\\"
                   fontSize=\\"5\\"
                 >
-                  ##25$$
+                  ##25&#x24;&#x24;
                 </text>
               </g>
             </switch>
@@ -667,55 +667,55 @@ class SvgComponent extends React.PureComponent {
               <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
-                    ##3$$,
+                    ##3&#x24;&#x24;,
                   </span>
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\" />
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-                    ##2$$
+                    ##2&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##1$$,
+                    ##1&#x24;&#x24;,
                   </span>
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\" />
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-                    ##5$$
+                    ##5&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##10$$
+                    ##10&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##11$$
+                    ##11&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##7$$
+                    ##7&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##6$$
+                    ##6&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##8$$
+                    ##8&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##4$$
+                    ##4&#x24;&#x24;
                   </span>
                 </p>
                 <p text-align=\\"right\\" text-align-last=\\"right\\">
                   <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-                    ##17$$, ##18$$ ##19$$
+                    ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
                   </span>
                 </p>
               </flow>
@@ -730,7 +730,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPS-BoldMT'\\"
                 fontSize=\\"9\\"
               >
-                ##3$$,
+                ##3&#x24;&#x24;,
               </tspan>
               <tspan
                 x=\\"24.75\\"
@@ -746,7 +746,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"7\\"
               >
-                ##2$$
+                ##2&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"2.825\\"
@@ -754,7 +754,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##1$$,
+                ##1&#x24;&#x24;,
               </tspan>
               <tspan
                 x=\\"24.825\\"
@@ -770,7 +770,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"7\\"
               >
-                ##5$$
+                ##5&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"20.474\\"
@@ -778,7 +778,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##10$$
+                ##10&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"20.474\\"
@@ -786,7 +786,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##11$$
+                ##11&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"24.474\\"
@@ -794,7 +794,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##7$$
+                ##7&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"24.474\\"
@@ -802,7 +802,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##6$$
+                ##6&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"24.474\\"
@@ -810,7 +810,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##8$$
+                ##8&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"24.474\\"
@@ -818,7 +818,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##4$$
+                ##4&#x24;&#x24;
               </tspan>
               <tspan
                 x=\\"-33.526\\"
@@ -826,7 +826,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"8\\"
               >
-                ##17$$, ##18$$ ##19$$
+                ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
               </tspan>
             </text>
           </g>
@@ -860,7 +860,7 @@ class SvgComponent extends React.PureComponent {
                   fontSize=\\"5\\"
                 >
                   <p>
-                    <span>##25$$</span>
+                    <span>##25&#x24;&#x24;</span>
                   </p>
                 </flow>
               </flowDef>
@@ -872,7 +872,7 @@ class SvgComponent extends React.PureComponent {
                 fontFamily=\\"'TimesNewRomanPSMT'\\"
                 fontSize=\\"5\\"
               >
-                ##25$$
+                ##25&#x24;&#x24;
               </text>
             </g>
           </switch>

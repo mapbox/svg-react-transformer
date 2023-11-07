@@ -37,55 +37,55 @@ exports[`toJsx works on a big one 1`] = `
         <flow xmlns=\\"http://ns.adobe.com/Flows/1.0/\\">
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
-              ##3$$,
+              ##3&#x24;&#x24;,
             </span>
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.894\\" />
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-              ##2$$
+              ##2&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##1$$,
+              ##1&#x24;&#x24;,
             </span>
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8.596\\" />
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-              ##5$$
+              ##5&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##10$$
+              ##10&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##11$$
+              ##11&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##7$$
+              ##7&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##6$$
+              ##6&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##8$$
+              ##8&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##4$$
+              ##4&#x24;&#x24;
             </span>
           </p>
           <p text-align=\\"right\\" text-align-last=\\"right\\">
             <span fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"8\\">
-              ##17$$, ##18$$ ##19$$
+              ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
             </span>
           </p>
         </flow>
@@ -95,7 +95,7 @@ exports[`toJsx works on a big one 1`] = `
       <path fill=\\"none\\" d=\\"M149.275 24.298h130.49v109.036h-130.49z\\" />
       <text transform=\\"translate(235.292 30.48)\\">
         <tspan x=\\"0\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPS-BoldMT'\\" fontSize=\\"9\\">
-          ##3$$,
+          ##3&#x24;&#x24;,
         </tspan>
         <tspan
           x=\\"24.75\\"
@@ -106,7 +106,7 @@ exports[`toJsx works on a big one 1`] = `
           {\\" \\"}
         </tspan>
         <tspan x=\\"26.974\\" y=\\"0\\" fontFamily=\\"'TimesNewRomanPSMT'\\" fontSize=\\"7\\">
-          ##2$$
+          ##2&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"2.825\\"
@@ -114,7 +114,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##1$$,
+          ##1&#x24;&#x24;,
         </tspan>
         <tspan
           x=\\"24.825\\"
@@ -130,7 +130,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"7\\"
         >
-          ##5$$
+          ##5&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"20.474\\"
@@ -138,7 +138,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##10$$
+          ##10&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"20.474\\"
@@ -146,7 +146,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##11$$
+          ##11&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"24.474\\"
@@ -154,7 +154,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##7$$
+          ##7&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"24.474\\"
@@ -162,7 +162,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##6$$
+          ##6&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"24.474\\"
@@ -170,7 +170,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##8$$
+          ##8&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"24.474\\"
@@ -178,7 +178,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##4$$
+          ##4&#x24;&#x24;
         </tspan>
         <tspan
           x=\\"-33.526\\"
@@ -186,7 +186,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"8\\"
         >
-          ##17$$, ##18$$ ##19$$
+          ##17&#x24;&#x24;, ##18&#x24;&#x24; ##19&#x24;&#x24;
         </tspan>
       </text>
     </g>
@@ -220,7 +220,7 @@ exports[`toJsx works on a big one 1`] = `
             fontSize=\\"5\\"
           >
             <p>
-              <span>##25$$</span>
+              <span>##25&#x24;&#x24;</span>
             </p>
           </flow>
         </flowDef>
@@ -232,7 +232,7 @@ exports[`toJsx works on a big one 1`] = `
           fontFamily=\\"'TimesNewRomanPSMT'\\"
           fontSize=\\"5\\"
         >
-          ##25$$
+          ##25&#x24;&#x24;
         </text>
       </g>
     </switch>
