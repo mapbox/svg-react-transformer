@@ -1,6 +1,8 @@
+dist: jammy
+
 language: node_js
 node_js:
-  - 8
+  - 18
 cache:
   directories:
     - node_modules
