@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/svg-react-transformer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Transform SVG into JSX or React component modules",
   "main": "index.js",
   "repository": {
@@ -44,6 +44,6 @@
     "react-dom": "^15.6.1"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=18"
   }
 }

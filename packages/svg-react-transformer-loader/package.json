@@ -27,6 +27,6 @@
     "pascal-case": "^2.0.1"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=18"
   }
 }
