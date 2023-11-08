@@ -14,5 +14,6 @@
         "**/*.md"
       ]
     }
-  }
+  },
+  "packages": ["packages/*"]
 }
