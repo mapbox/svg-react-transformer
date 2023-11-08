@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.2
+
+- Updated dependencies & node to v.18
+
 ## 2.0.1
 
 - Fix bug with svg `viewBox` sometimes being removed.
